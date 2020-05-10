@@ -4,7 +4,7 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="bugku之misc, 清风堂">
+    <meta name="keywords" content="bugku-web-wp, 清风堂">
     <meta name="description" content="学习-感悟-生活">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>bugku之misc | 清风堂</title>
+    <title>bugku-web-wp | 清风堂</title>
     <link rel="icon" type="image/png" href="/Zzhanp.github.io/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/Zzhanp.github.io/libs/awesome/css/all.css">
@@ -305,12 +305,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/Zzhanp.github.io/medias/featureimages/1.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/Zzhanp.github.io/medias/featureimages/15.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">bugku之misc</h1>
+                    <h1 class="description center-align post-title">bugku-web-wp</h1>
                 </div>
             </div>
         </div>
@@ -443,8 +443,8 @@
                                 <span class="chip bg-color">ctf</span>
                             </a>
                         
-                            <a href="/Zzhanp.github.io/tags/misc/">
-                                <span class="chip bg-color">misc</span>
+                            <a href="/Zzhanp.github.io/tags/web/">
+                                <span class="chip bg-color">web</span>
                             </a>
                         
                     </div>
@@ -468,7 +468,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2020-05-01
+                    2020-05-10
                 </div>
                 
 
@@ -484,23 +484,61 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="杂项"><a href="#杂项" class="headerlink" title="杂项"></a>杂项</h1><p>学校的题没有解析。。好多不太会做，于是重拾bugku，从bugku开始我的ctf之旅吧~</p>
-<h3 id="签到题"><a href="#签到题" class="headerlink" title="签到题"></a>签到题</h3><p>emm<br>懂的都懂</p>
-<h3 id="这是一张单纯的图片"><a href="#这是一张单纯的图片" class="headerlink" title="这是一张单纯的图片"></a>这是一张单纯的图片</h3><p>看题~<br><img src="https://zzhanp-1257986342.cos.ap-beijing.myqcloud.com/img/525_1.png" alt="525_1"><br>给了一张图片，FLAG在哪里？<br>根据提示，考虑图片隐写<br><img src="https://zzhanp-1257986342.cos.ap-beijing.myqcloud.com/img/527_1.jpg" alt="527_1"><br>查看属性<br><img src="https://zzhanp-1257986342.cos.ap-beijing.myqcloud.com/img/529_1.png" alt="529_1"><br>没有什么异常~<br>用010查看<br><img src="https://zzhanp-1257986342.cos.ap-beijing.myqcloud.com/img/531_1.png" alt="531_1"><br>发现最下端有一段Unicode编码<br>复制 解码<br><img src="https://zzhanp-1257986342.cos.ap-beijing.myqcloud.com/img/533_1.png" alt="533_1"><br>over~<br><strong>思考：因为看学长做了一遍，所以知道做法。我想知道怎样判断考的是这种Unicode编码还是那种改长和宽的？？？<br>另外，要学习一下怎样看那个png的编码，哪里是长、哪里是宽！</strong></p>
-<h3 id="隐写"><a href="#隐写" class="headerlink" title="隐写"></a>隐写</h3><p>看题~ 给了一张图片<br><img src="https://zzhanp-1257986342.cos.ap-beijing.myqcloud.com/img/537_1.png" alt="537_1" style="zoom:80%;"><br>根据现有的经验<br>png文件 查看属性<br><img src="https://zzhanp-1257986342.cos.ap-beijing.myqcloud.com/img/539_1.png" alt="539_1"><br>高和宽不对等<br>尝试改变高度 0420 换成16进制是01A4<br><img src="https://zzhanp-1257986342.cos.ap-beijing.myqcloud.com/img/541_1.png" alt="541_1"><br>如图 将A4改为F4<br><img src="https://zzhanp-1257986342.cos.ap-beijing.myqcloud.com/img/543_1.png" alt="543_1"><br>保存<br><img src="https://zzhanp-1257986342.cos.ap-beijing.myqcloud.com/img/545_1.png" alt="545_1" style="zoom:67%;"><br>果然最下面出现了flag~</p>
-<p><strong>这里总结一下：图片隐写类，png文件要看看高宽是否相等<br>png的数据头是89504E47</strong><br><img src="https://zzhanp-1257986342.cos.ap-beijing.myqcloud.com/img/547_1.png" alt="547_1"></p>
-<p><strong>jpg文件 开始标志 FF D8  结束标志 FF D9</strong><br><img src="https://zzhanp-1257986342.cos.ap-beijing.myqcloud.com/img/549_1.png" alt="549_1"><br><strong>png文件的第二行八个字节表示宽和高<br>前四位是宽 后四位是高</strong></p>
-<h3 id="telnet"><a href="#telnet" class="headerlink" title="telnet"></a>telnet</h3><p><img src="https://zzhanp-1257986342.cos.ap-beijing.myqcloud.com/img/551_1.png" alt="551_1"><br>给了一个zip包<br>下载解压<br><img src="https://zzhanp-1257986342.cos.ap-beijing.myqcloud.com/img/553_1.png" alt="553_1"><br>发现居然能用wireshark打开（幸好之前下载过）<br>百度了一下telnet<br><img src="https://zzhanp-1257986342.cos.ap-beijing.myqcloud.com/img/555_1.png" alt="555_1"><br>看到熟悉的TCP/IP 与wireshark有关也不奇怪了</p>
-<h3 id="啊哒"><a href="#啊哒" class="headerlink" title="啊哒"></a>啊哒</h3><p>看题<br><img src="https://zzhanp-1257986342.cos.ap-beijing.myqcloud.com/img/557_1.png" alt="557_1"><br>解压 是一张jpg图片<br><img src="https://zzhanp-1257986342.cos.ap-beijing.myqcloud.com/img/559_1.jpg" alt="559_1" style="zoom:50%;"><br>由于先前的经验（之前一道jpg的题是文件最后藏了一串Unicode编码）<br>于是 拖进010查看<br><img src="https://zzhanp-1257986342.cos.ap-beijing.myqcloud.com/img/561_1.png" alt="561_1"><br>果然 在最后发现了 flag.txt<br>说明这个图片里藏着一个txt文件<br>这里有一个强大的工具 <strong>binwalk</strong><br>是<strong>查看下载的文件中是否包含其他文件</strong>的神器，正好与本题需求契合</p>
-<p>打开kali 将图片拖进去 binwalk分析一番<br><img src="https://zzhanp-1257986342.cos.ap-beijing.myqcloud.com/img/563_1.png" alt="563_1"><br>果然里面藏着一个flag.txt<br>接下来的任务就是把这个txt文件提取出来<br>分离文件的方法有很多，如binwalk、foremost、dd等<br>这里采用foremost<br><img src="https://zzhanp-1257986342.cos.ap-beijing.myqcloud.com/img/565_1.png" alt="565_1"><br><img src="https://zzhanp-1257986342.cos.ap-beijing.myqcloud.com/img/567_1.png" alt="567_1"><br>成功分离~<br>但是这里发现此文件需要密码</p>
-<p>但是过程中并没有什么密码。。<br>回头重新查看图片<br><img src="https://zzhanp-1257986342.cos.ap-beijing.myqcloud.com/img/569_1.png" alt="569_1"><br>发现这里有一串奇怪的数字<br>十六进制解码一下得到一个像解压密码的东西<br><img src="https://zzhanp-1257986342.cos.ap-beijing.myqcloud.com/img/571_1.png" alt="571_1"><br>试一下~<br><img src="https://zzhanp-1257986342.cos.ap-beijing.myqcloud.com/img/573_1.png" alt="573_1"><br>成功~</p>
-<p><strong>总结：这道题挺有意思的，学到的也挺多</strong></p>
-<h4 id="分离文件"><a href="#分离文件" class="headerlink" title="分离文件"></a>分离文件</h4><p>binwalk：<strong>多重文件查看利器</strong><br>在CTF的<strong>MISC类题型和IOT安全的固件解包分析</strong>中广泛应用</p>
-<p><strong>binwalk的主要功能：</strong></p>
-<h5 id="扫描固件"><a href="#扫描固件" class="headerlink" title="扫描固件"></a>扫描固件</h5><p>Binwalk可以扫描许多不同嵌入式文件类型和文件系统的固件映像，只需给它一个要扫描的文件列表<br>binwalk xxxx.xxx（文件名）</p>
-<h5 id="文件提取（-e-–extract）"><a href="#文件提取（-e-–extract）" class="headerlink" title="文件提取（-e,–extract）"></a>文件提取（-e,–extract）</h5><p>可以使用-e选项提取它在固件映像中找到的任何文件。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">binwalk -e firmware.bin</span><br></pre></td></tr></table></figure></p>
-<p><strong>foremost</strong></p>
-
+                <h1 id="bugku-web"><a href="#bugku-web" class="headerlink" title="bugku-web"></a>bugku-web</h1><p>最近学校的ctf比赛开始了，但是尝试了一下，几乎一道都做不出来。。。</p>
+<p>唉。。还是稳扎稳打，一步一步来吧</p>
+<h2 id="web2"><a href="#web2" class="headerlink" title="web2"></a>web2</h2><p>F12查看源代码</p>
+<p><img src="https://zzhanp-1257986342.cos.ap-beijing.myqcloud.com/img/image-20200510173650240.png" alt=""></p>
+<h2 id="计算器"><a href="#计算器" class="headerlink" title="计算器"></a>计算器</h2><p>这道题是让你输个验证码，但是输的时候发现只能输一位数字。</p>
+<p>F12，修改验证框的大小</p>
+<p><img src="https://zzhanp-1257986342.cos.ap-beijing.myqcloud.com/img/image-20200510181926711.png" alt="image-20200510181926711"></p>
+<p>1修改为10，之后就能输的下啦~</p>
+<p>点击验证，得到flag{CTF-bugku-0032}</p>
+<h2 id="web基础-GET"><a href="#web基础-GET" class="headerlink" title="web基础$_GET"></a>web基础$_GET</h2><p><code>$what=$_GET[&#39;what&#39;];//读取参数what，把值存到变量what中
+ echo $what;//输出
+ if($what==&#39;flag&#39;)//如果值为flag
+ echo &#39;flag{****}&#39;;//打印flag</code></p>
+<p>因此，地址修改为<code>http://123.206.87.240:8002/get/?what=flag</code></p>
+<p><u>这里要注意，get请求，传入参数的形式是在url后面加 <strong>?参数=值</strong></u></p>
+<p><u>多个参数用<strong>?参数1=值1&amp;参数2=值2……</strong></u></p>
+<h2 id="web基础-POST"><a href="#web基础-POST" class="headerlink" title="web基础$_POST"></a>web基础$_POST</h2><p>题目和上一道类似，考察基础</p>
+<p><code>$what=$_POST[&#39;what&#39;];//接受post过来的参数what，存到what里
+ echo $what;//打印
+ if($what==&#39;flag&#39;)//如果值是flag
+ echo &#39;flag{****}&#39;;//打印flag</code></p>
+<p>注意，POST请求没法写在url里，需要用hackbar或者burp修改，格式是在</p>
+<p><strong>参数1=值&amp;参数2=值</strong></p>
+<p><img src="https://zzhanp-1257986342.cos.ap-beijing.myqcloud.com/img/post.png" alt="post"></p>
+<p>之后得到</p>
+<p><img src="https://zzhanp-1257986342.cos.ap-beijing.myqcloud.com/img/image-20200510182951888.png" alt=""></p>
+<h2 id="矛盾"><a href="#矛盾" class="headerlink" title="矛盾"></a>矛盾</h2><p>看题</p>
+<p><code>$num=$_GET[&#39;num&#39;];//获取参数num
+ if(!is_numeric($num))//如果不是数字
+ {
+ echo $num;//打印
+ if($num==1)//如果是数字且为1
+ echo &#39;flag{**********}&#39;;打印flag
+ }</code></p>
+<p>搜索一下 is_numeric() 函数：</p>
+<p><strong>用于检测变量是否为数字或数字字符串</strong></p>
+<h3 id="思路一："><a href="#思路一：" class="headerlink" title="思路一："></a>思路一：</h3><p> 这个要求不是数字且为1，有点矛盾是不是？其实有绕过的办法。下面num==1的判定是两个等号，这是弱类型比较，如果等号两边类型不同，会转换成相同类型再比较。与之对应的是强类型比较，用的是三个等号===，如果类型不同就直接不相等了。<strong>在弱类型比较下，当一个字符串与数字比较时，会把字符串转换成数字，具体是保留字母前的数字。例如123ab7c会转成123，ab7c会转成0.（字母前没数字就是0）</strong></p>
+<p>所以payload：</p>
+<p><code>http://123.206.87.240:8002/get/index1.php?num=1a</code></p>
+<p>得1aflag{bugku-789-ps-ssdf}</p>
+<h2 id="web3"><a href="#web3" class="headerlink" title="web3"></a>web3</h2><p>打开页面后有个弹窗，点击阻止加载</p>
+<p>F12查看原码</p>
+<p><img src="https://zzhanp-1257986342.cos.ap-beijing.myqcloud.com/img/image-20200510214748579.png" alt="image-20200510214748579"></p>
+<p>发现下面有一串字</p>
+<p><code>&amp;#75;&amp;#69;&amp;#89;&amp;#123;&amp;#74;&amp;#50;&amp;#115;&amp;#97;&amp;#52;&amp;#50;&amp;#97;&amp;#104;&amp;#74;&amp;#75;&amp;#45;&amp;#72;&amp;#83;&amp;#49;&amp;#49;&amp;#73;&amp;#73;&amp;#73;&amp;#125;</code></p>
+<p>是一串Unicode码，打开转换工具，转成ASCII码即可得到flag</p>
+<p>&#75;&#69;&#89;&#123;&#74;&#50;&#115;&#97;&#52;&#50;&#97;&#104;&#74;&#75;&#45;&#72;&#83;&#49;&#49;&#73;&#73;&#73;&#125;</p>
+<p>惊奇的发现，typora中Unicode居然能自动转为ASCII码。。</p>
+<h2 id="域名解析"><a href="#域名解析" class="headerlink" title="域名解析"></a>域名解析</h2><p>题目是让把  flag.baidu.com  解析到123.206.87.240</p>
+<p>打开电脑的host文件，添加解析规则</p>
+<p>C:\Windows\System32\drivers\etc</p>
+<p>添加  123.206.87.240 flag.baidu.com</p>
+<p>之后再访问flag.baidu.com即可得到flag</p>
+<p><img src="https://zzhanp-1257986342.cos.ap-beijing.myqcloud.com/img/image-20200510215629963.png" alt="image-20200510215629963"></p>
+<h2 id="你必须让他停下"><a href="#你必须让他停下" class="headerlink" title="你必须让他停下"></a>你必须让他停下</h2>
             </div>
             <hr>
 
@@ -525,7 +563,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://zzhanp.github.io/Zzhanp.github.io/2020/05/01/bugku之misc/">https://zzhanp.github.io/Zzhanp.github.io/2020/05/01/bugku之misc/</a>
+                    <a href="https://zzhanp.github.io/Zzhanp.github.io/2020/05/10/bugku-web-wp/">https://zzhanp.github.io/Zzhanp.github.io/2020/05/10/bugku-web-wp/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -571,8 +609,8 @@
                                     <span class="chip bg-color">ctf</span>
                                 </a>
                             
-                                <a href="/Zzhanp.github.io/tags/misc/">
-                                    <span class="chip bg-color">misc</span>
+                                <a href="/Zzhanp.github.io/tags/web/">
+                                    <span class="chip bg-color">web</span>
                                 </a>
                             
                         </div>
@@ -742,7 +780,8 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
                 <a href="/Zzhanp.github.io/2020/05/10/bugku-web-wp/">
                     <div class="card-image">
@@ -766,9 +805,9 @@ F12，修改验证框的大小
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-05-10
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-10
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -781,6 +820,7 @@ F12，修改验证框的大小
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -807,34 +847,35 @@ F12，修改验证框的大小
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/Zzhanp.github.io/2020/04/30/部署后没有新文章/">
+                <a href="/Zzhanp.github.io/2020/05/01/bugku之misc/">
                     <div class="card-image">
                         
                         
-                        <img src="/Zzhanp.github.io/medias/featureimages/21.jpg" class="responsive-img" alt="部署后没有新文章">
+                        <img src="/Zzhanp.github.io/medias/featureimages/1.jpg" class="responsive-img" alt="bugku之misc">
                         
-                        <span class="card-title">部署后没有新文章</span>
+                        <span class="card-title">bugku之misc</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            今天写了一篇新博客，一波操作上传后发现博客里并没有那篇新文章。。
-找了一下public文件夹里也没有那篇。。
-搜索也没搜出来什么。。
-最后对比了一下，发现这篇新文章tags后面少了个空格。。。。。。
-
-汗(lll￢ω￢)。。。以此为戒吧。。
+                            杂项学校的题没有解析。。好多不太会做，于是重拾bugku，从bugku开始我的ctf之旅吧~
+签到题emm懂的都懂
+这是一张单纯的图片看题~给了一张图片，FLAG在哪里？根据提示，考虑图片隐写查看属性没有什么异常~用010查看发现最下端有一
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-30
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-01
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            山人
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/Zzhanp.github.io/categories/ctf/" class="post-category">
+                                    ctf
+                                </a>
+                            
                             
                         </span>
                     </div>
@@ -842,8 +883,16 @@ F12，修改验证框的大小
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/Zzhanp.github.io/tags/博客/">
-                        <span class="chip bg-color">博客</span>
+                    <a href="/Zzhanp.github.io/tags/bugku/">
+                        <span class="chip bg-color">bugku</span>
+                    </a>
+                    
+                    <a href="/Zzhanp.github.io/tags/ctf/">
+                        <span class="chip bg-color">ctf</span>
+                    </a>
+                    
+                    <a href="/Zzhanp.github.io/tags/misc/">
+                        <span class="chip bg-color">misc</span>
                     </a>
                     
                 </div>

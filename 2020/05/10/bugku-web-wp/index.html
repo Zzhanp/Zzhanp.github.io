@@ -435,12 +435,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/Zzhanp.github.io/tags/bugku/">
-                                <span class="chip bg-color">bugku</span>
-                            </a>
-                        
                             <a href="/Zzhanp.github.io/tags/ctf/">
                                 <span class="chip bg-color">ctf</span>
+                            </a>
+                        
+                            <a href="/Zzhanp.github.io/tags/bugku/">
+                                <span class="chip bg-color">bugku</span>
                             </a>
                         
                             <a href="/Zzhanp.github.io/tags/web/">
@@ -520,7 +520,7 @@
  }</code></p>
 <p>搜索一下 is_numeric() 函数：</p>
 <p><strong>用于检测变量是否为数字或数字字符串</strong></p>
-<h3 id="思路一："><a href="#思路一：" class="headerlink" title="思路一："></a>思路一：</h3><p> 这个要求不是数字且为1，有点矛盾是不是？其实有绕过的办法。下面num==1的判定是两个等号，这是弱类型比较，如果等号两边类型不同，会转换成相同类型再比较。与之对应的是强类型比较，用的是三个等号===，如果类型不同就直接不相等了。<strong>在弱类型比较下，当一个字符串与数字比较时，会把字符串转换成数字，具体是保留字母前的数字。例如123ab7c会转成123，ab7c会转成0.（字母前没数字就是0）</strong></p>
+<p> 这个要求不是数字且为1，有点矛盾是不是？其实有绕过的办法。下面num==1的判定是两个等号，这是弱类型比较，如果等号两边类型不同，会转换成相同类型再比较。与之对应的是强类型比较，用的是三个等号===，如果类型不同就直接不相等了。<strong>在弱类型比较下，当一个字符串与数字比较时，会把字符串转换成数字，具体是保留字母前的数字。例如123ab7c会转成123，ab7c会转成0.（字母前没数字就是0）</strong></p>
 <p>所以payload：</p>
 <p><code>http://123.206.87.240:8002/get/index1.php?num=1a</code></p>
 <p>得1aflag{bugku-789-ps-ssdf}</p>
@@ -538,6 +538,8 @@
 <p>添加  123.206.87.240 flag.baidu.com</p>
 <p>之后再访问flag.baidu.com即可得到flag</p>
 <p><img src="https://zzhanp-1257986342.cos.ap-beijing.myqcloud.com/img/image-20200510215629963.png" alt="image-20200510215629963"></p>
+<p>学习一下host文件：</p>
+<p><strong>Hosts是一个没有扩展名的系统文件，可以用记事本等工具打开，其作用就是将一些常用的网址域名与其对应的IP地址建立一个关联“数据库”，当用户在浏览器中输入一个需要登录的网址时，系统会首先自动从Hosts文件中寻找对应的IP地址，一旦找到，系统会立即打开对应网页，如果没有找到，则系统会再将网址提交DNS域名解析服务器进行IP地址的解析。<br>需要注意的是，Hosts文件配置的映射是静态的，如果网络上的计算机更改了请及时更新IP地址，否则将不能访问。</strong></p>
 <h2 id="你必须让他停下"><a href="#你必须让他停下" class="headerlink" title="你必须让他停下"></a>你必须让他停下</h2>
             </div>
             <hr>
@@ -601,12 +603,12 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/Zzhanp.github.io/tags/bugku/">
-                                    <span class="chip bg-color">bugku</span>
-                                </a>
-                            
                                 <a href="/Zzhanp.github.io/tags/ctf/">
                                     <span class="chip bg-color">ctf</span>
+                                </a>
+                            
+                                <a href="/Zzhanp.github.io/tags/bugku/">
+                                    <span class="chip bg-color">bugku</span>
                                 </a>
                             
                                 <a href="/Zzhanp.github.io/tags/web/">
@@ -780,34 +782,31 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;Current
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/Zzhanp.github.io/2020/05/10/bugku-web-wp/">
+                <a href="/Zzhanp.github.io/2020/07/11/信安实验室之MISC/">
                     <div class="card-image">
                         
                         
-                        <img src="/Zzhanp.github.io/medias/featureimages/15.jpg" class="responsive-img" alt="bugku-web-wp">
+                        <img src="/Zzhanp.github.io/medias/featureimages/1.jpg" class="responsive-img" alt="信安实验室之MISC">
                         
-                        <span class="card-title">bugku-web-wp</span>
+                        <span class="card-title">信安实验室之MISC</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            bugku-web最近学校的ctf比赛开始了，但是尝试了一下，几乎一道都做不出来。。。
-唉。。还是稳扎稳打，一步一步来吧
-web2F12查看源代码
-
-计算器这道题是让你输个验证码，但是输的时候发现只能输一位数字。
-F12，修改验证框的大小
-
+                            信安实验室之MISC本以为进不去实验室了，没想到老天眷顾，给了我这次机会，那便好好努力吧！
+Welcome签到题，给了一串字符
+ZmxhZ3tXZTFjMG1lX3QwX0IxVF9OU0MhfQ==
+Base64加密，解密即可得
+flag
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-10
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-07-11
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -820,20 +819,19 @@ F12，修改验证框的大小
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
-                    
-                    <a href="/Zzhanp.github.io/tags/bugku/">
-                        <span class="chip bg-color">bugku</span>
-                    </a>
                     
                     <a href="/Zzhanp.github.io/tags/ctf/">
                         <span class="chip bg-color">ctf</span>
                     </a>
                     
-                    <a href="/Zzhanp.github.io/tags/web/">
-                        <span class="chip bg-color">web</span>
+                    <a href="/Zzhanp.github.io/tags/misc/">
+                        <span class="chip bg-color">misc</span>
+                    </a>
+                    
+                    <a href="/Zzhanp.github.io/tags/信安实验室/">
+                        <span class="chip bg-color">信安实验室</span>
                     </a>
                     
                 </div>
@@ -883,16 +881,16 @@ F12，修改验证框的大小
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/Zzhanp.github.io/tags/bugku/">
-                        <span class="chip bg-color">bugku</span>
-                    </a>
-                    
                     <a href="/Zzhanp.github.io/tags/ctf/">
                         <span class="chip bg-color">ctf</span>
                     </a>
                     
                     <a href="/Zzhanp.github.io/tags/misc/">
                         <span class="chip bg-color">misc</span>
+                    </a>
+                    
+                    <a href="/Zzhanp.github.io/tags/bugku/">
+                        <span class="chip bg-color">bugku</span>
                     </a>
                     
                 </div>

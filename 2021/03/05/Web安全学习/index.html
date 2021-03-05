@@ -4,7 +4,7 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="信安实验室之MISC, 清风堂">
+    <meta name="keywords" content="Web安全学习, 清风堂">
     <meta name="description" content="学习-感悟-生活">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>信安实验室之MISC | 清风堂</title>
+    <title>Web安全学习 | 清风堂</title>
     <link rel="icon" type="image/png" href="/Zzhanp.github.io/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/Zzhanp.github.io/libs/awesome/css/all.css">
@@ -305,12 +305,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/Zzhanp.github.io/medias/featureimages/1.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/Zzhanp.github.io/medias/featureimages/3.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">信安实验室之MISC</h1>
+                    <h1 class="description center-align post-title">Web安全学习</h1>
                 </div>
             </div>
         </div>
@@ -435,16 +435,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/Zzhanp.github.io/tags/ctf/">
-                                <span class="chip bg-color">ctf</span>
-                            </a>
-                        
-                            <a href="/Zzhanp.github.io/tags/misc/">
-                                <span class="chip bg-color">misc</span>
-                            </a>
-                        
-                            <a href="/Zzhanp.github.io/tags/信安实验室/">
-                                <span class="chip bg-color">信安实验室</span>
+                            <a href="/Zzhanp.github.io/tags/Web安全/">
+                                <span class="chip bg-color">Web安全</span>
                             </a>
                         
                     </div>
@@ -455,8 +447,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/Zzhanp.github.io/categories/ctf/" class="post-category">
-                                ctf
+                            <a href="/Zzhanp.github.io/categories/Web安全/" class="post-category">
+                                Web安全
                             </a>
                         
                     </div>
@@ -468,7 +460,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2020-07-11
+                    2021-03-05
                 </div>
                 
 
@@ -484,28 +476,43 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="信安实验室之MISC"><a href="#信安实验室之MISC" class="headerlink" title="信安实验室之MISC"></a>信安实验室之MISC</h1><p>本以为进不去实验室了，没想到老天眷顾，给了我这次机会，那便好好努力吧！</p>
-<h2 id="Welcome"><a href="#Welcome" class="headerlink" title="Welcome"></a>Welcome</h2><p>签到题，给了一串字符</p>
-<p>ZmxhZ3tXZTFjMG1lX3QwX0IxVF9OU0MhfQ==</p>
-<p>Base64加密，解密即可得</p>
-<p>flag{We1c0me_t0_B1T_NSC!}</p>
-<p><strong>这里想说的是后面有俩等号的都是base64加密</strong></p>
-<h2 id="PDF-1"><a href="#PDF-1" class="headerlink" title="PDF_1"></a>PDF_1</h2><p>第一次遇到pdf的题，打开看到是一张图片，一开始我还想着把pdf改成jpg或png呢。。。太傻了简直。。</p>
-<p>猜想flag隐藏在图片下方，如何移开图片呢？</p>
-<p>1.利用在线工具：<a href="https://app.xunjiepdf.com/pdf2word" target="_blank" rel="noopener">https://app.xunjiepdf.com/pdf2word</a> 将pdf转换为word，从而移开图片</p>
-<p><img src="https://zzhanp-1257986342.cos.ap-beijing.myqcloud.com/img/ctf2.png" alt="ctf2" style="zoom: 50%;"></p>
-<p>可以看到左上角有一行flag</p>
-<p>2.apowerpdf 本地工具打开pdf,将照片移开得到flag</p>
-<p>3.用Linux自带工具pdftotext将pdf转为txt</p>
-<p><img src="https://zzhanp-1257986342.cos.ap-beijing.myqcloud.com/img/ctf1.png" alt="ctf1"></p>
-<p>转为txt后，用grep查找flag或者直接打开txt来查找</p>
-<h2 id="数独"><a href="#数独" class="headerlink" title="数独"></a>数独</h2><p>给了一个数独，并提示：flag：第一行和最后一行连接形成的字符串，再经过MD5转换，取32位大写</p>
-<p>emm然而我并不会解数独。。。不过还好有万能的百度</p>
-<p><img src="https://zzhanp-1257986342.cos.ap-beijing.myqcloud.com/img/ctf3.png" alt="ctf3" style="zoom:67%;"></p>
-<p>第一行加最后一行是267381945895143267</p>
-<p>MD5转换得：ae382493d0b370d6959d8b44ab128bda</p>
-<p>转换大写即可flag{AE382493D0B370D6959D8B44AB128BDA}</p>
-<h2 id="DIO-1"><a href="#DIO-1" class="headerlink" title="DIO_1"></a>DIO_1</h2>
+                <h1 id="Web安全学习"><a href="#Web安全学习" class="headerlink" title="Web安全学习"></a>Web安全学习</h1><h2 id="HTTP"><a href="#HTTP" class="headerlink" title="HTTP"></a>HTTP</h2><p>HTTP(HyperText Transfer Protocol)即超文本传输协议，它允许将HTML文档从Web服务器传送到Web浏览器。</p>
+<p>URL：统一资源定位符，即网页地址。标准格式：</p>
+<p><strong>协议://服务器IP[:端口]/路径/[?查询]，如<a href="http://www.xxser.com/post/httpxieyi.html" target="_blank" rel="noopener">http://www.xxser.com/post/httpxieyi.html</a></strong></p>
+<p>Windows中，可以用curl.exe工具，通过curl+URL命令即可发起一个HTTP请求。</p>
+<p>HTTP是一种无状态的协议。当一个客户端向服务器端发出请求，然后Web服务器返回响应（Response），连接就被关闭了，在服务器端不保留连接的有关信息。<strong>HTTP请求只能由客户端发起，而服务器不能主动向客户端发送数据。</strong></p>
+<h3 id="HTTP请求"><a href="#HTTP请求" class="headerlink" title="HTTP请求"></a>HTTP请求</h3><p><code>GET / HTTP/1.1</code>                     <!--请求行--><br><code>Host: www.baidu.com</code>          <!--请求头--><br><code>User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:86.0) Gecko/20100101 Firefox/86.0</code></p>
+<p>请求行由说明该请求是GET请求，使用的是HTTP1.1版本。</p>
+<p>请求头中，HOST代表请求的主机地址，User-Agent代表浏览器的标识。</p>
+<h3 id="HTTP请求方法"><a href="#HTTP请求方法" class="headerlink" title="HTTP请求方法"></a>HTTP请求方法</h3><p>GET：GET方法用于获取请求页面的指定信息。</p>
+<p>HEAD：HEAD方法除了服务器不能在响应里返回消息主体外，其他都与FET方法相同。</p>
+<p>POST：向服务器传输大量的数据，通常使用POST请求。</p>
+<h3 id="HTTP状态码"><a href="#HTTP状态码" class="headerlink" title="HTTP状态码"></a>HTTP状态码</h3><p>1xx：信息提示，标识请求已被成功接收，继续处理，其范围为100~101.</p>
+<p>2xx：成功，服务器成功地处理了请求，范围为200~206.</p>
+<p>3xx：重定向，用于告诉浏览器客户端，他们访问的资源已被移动，并告诉客户端新的资源地址位置。</p>
+<p>4xx：客户端错误状态码，有时客户端会发送一些服务器无法处理的东西，比如格式错误的请求，或者最常见的是，请求一个不存在的URL。</p>
+<p>5xx：描述服务器内部错误。</p>
+<p><strong>常见状态码：</strong></p>
+<p>200：客户端请求成功，是最常见的状态。</p>
+<p>302：重定向。</p>
+<p>404：请求资源不存在。</p>
+<p>400：客户端请求有语法错误，不能被服务器所理解。</p>
+<p>401：请求未经授权。</p>
+<p>403：服务器收到请求，但是拒绝提供服务。</p>
+<p>500：服务器内部错误，是最常见的状态。</p>
+<p>503：服务器当前不能处理客户端的请求，一段时间后可能恢复正常。</p>
+<h3 id="HTTP消息"><a href="#HTTP消息" class="headerlink" title="HTTP消息"></a>HTTP消息</h3><p>又称HTTP头（HTTP header），由请求头、响应头、普通头和实体头组成。</p>
+<p><strong>请求头：</strong></p>
+<p>请求头只出现在HTTP请求中，常用的HTTP请求头如下：</p>
+<p>Host：指定被请求资源的Internet主机和端口号。</p>
+<p>User-Agent：允许客户端将它的操作系统、浏览器和其他属性告诉服务器。</p>
+<p>Referer：Referer包含一个URL，代表当前访问URL的上一个URL。如：Referer:<a href="http://www.xxser.com/login.php，代表用户从login.php来到当前页面。" target="_blank" rel="noopener">www.xxser.com/login.php，代表用户从login.php来到当前页面。</a></p>
+<p>Cookie：它是一段文本，常用来表示请求者身份。</p>
+<p>Range：可以请求实体的部分内容，多线程下载一定会用到此请求头。</p>
+<p>x-forward-for：即XFF头，他代表请求端的IP，可以有多个，中间以逗号隔开。</p>
+<p>Accept：用于指定客户端接收哪些MIME类型的消息，如Accept：text/html，表明客户端希望接收HTML文本。</p>
+<p><strong>响应头：</strong></p>
+
             </div>
             <hr>
 
@@ -530,7 +537,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://zzhanp.github.io/Zzhanp.github.io/2020/07/11/信安实验室之MISC/">https://zzhanp.github.io/Zzhanp.github.io/2020/07/11/信安实验室之MISC/</a>
+                    <a href="https://zzhanp.github.io/Zzhanp.github.io/2021/03/05/Web安全学习/">https://zzhanp.github.io/Zzhanp.github.io/2021/03/05/Web安全学习/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -568,16 +575,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/Zzhanp.github.io/tags/ctf/">
-                                    <span class="chip bg-color">ctf</span>
-                                </a>
-                            
-                                <a href="/Zzhanp.github.io/tags/misc/">
-                                    <span class="chip bg-color">misc</span>
-                                </a>
-                            
-                                <a href="/Zzhanp.github.io/tags/信安实验室/">
-                                    <span class="chip bg-color">信安实验室</span>
+                                <a href="/Zzhanp.github.io/tags/Web安全/">
+                                    <span class="chip bg-color">Web安全</span>
                                 </a>
                             
                         </div>
@@ -747,7 +746,60 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
+            <div class="card">
+                <a href="/Zzhanp.github.io/2021/03/05/Web安全学习/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/Zzhanp.github.io/medias/featureimages/3.jpg" class="responsive-img" alt="Web安全学习">
+                        
+                        <span class="card-title">Web安全学习</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            Web安全学习HTTPHTTP(HyperText Transfer Protocol)即超文本传输协议，它允许将HTML文档从Web服务器传送到Web浏览器。
+URL：统一资源定位符，即网页地址。标准格式：
+协议://服务器IP[:端口]
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-05
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/Zzhanp.github.io/categories/Web安全/" class="post-category">
+                                    Web安全
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/Zzhanp.github.io/tags/Web安全/">
+                        <span class="chip bg-color">Web安全</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/Zzhanp.github.io/2021/03/02/PHP/">
                     <div class="card-image">
@@ -768,9 +820,9 @@ Apache根据U
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-03-02
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-02
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -788,69 +840,6 @@ Apache根据U
                     
                     <a href="/Zzhanp.github.io/tags/PHP/">
                         <span class="chip bg-color">PHP</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                Next&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/Zzhanp.github.io/2020/05/10/bugku-web-wp/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/Zzhanp.github.io/medias/featureimages/15.jpg" class="responsive-img" alt="bugku-web-wp">
-                        
-                        <span class="card-title">bugku-web-wp</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            bugku-web最近学校的ctf比赛开始了，但是尝试了一下，几乎一道都做不出来。。。
-唉。。还是稳扎稳打，一步一步来吧
-web2F12查看源代码
-
-计算器这道题是让你输个验证码，但是输的时候发现只能输一位数字。
-F12，修改验证框的大小
-
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-10
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/Zzhanp.github.io/categories/ctf/" class="post-category">
-                                    ctf
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/Zzhanp.github.io/tags/ctf/">
-                        <span class="chip bg-color">ctf</span>
-                    </a>
-                    
-                    <a href="/Zzhanp.github.io/tags/bugku/">
-                        <span class="chip bg-color">bugku</span>
-                    </a>
-                    
-                    <a href="/Zzhanp.github.io/tags/web/">
-                        <span class="chip bg-color">web</span>
                     </a>
                     
                 </div>

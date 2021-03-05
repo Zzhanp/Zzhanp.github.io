@@ -4,7 +4,7 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="信安实验室之MISC, 清风堂">
+    <meta name="keywords" content="PHP, 清风堂">
     <meta name="description" content="学习-感悟-生活">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>信安实验室之MISC | 清风堂</title>
+    <title>PHP | 清风堂</title>
     <link rel="icon" type="image/png" href="/Zzhanp.github.io/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/Zzhanp.github.io/libs/awesome/css/all.css">
@@ -305,12 +305,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/Zzhanp.github.io/medias/featureimages/1.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/Zzhanp.github.io/medias/featureimages/16.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">信安实验室之MISC</h1>
+                    <h1 class="description center-align post-title">PHP</h1>
                 </div>
             </div>
         </div>
@@ -435,16 +435,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/Zzhanp.github.io/tags/ctf/">
-                                <span class="chip bg-color">ctf</span>
-                            </a>
-                        
-                            <a href="/Zzhanp.github.io/tags/misc/">
-                                <span class="chip bg-color">misc</span>
-                            </a>
-                        
-                            <a href="/Zzhanp.github.io/tags/信安实验室/">
-                                <span class="chip bg-color">信安实验室</span>
+                            <a href="/Zzhanp.github.io/tags/PHP/">
+                                <span class="chip bg-color">PHP</span>
                             </a>
                         
                     </div>
@@ -455,8 +447,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/Zzhanp.github.io/categories/ctf/" class="post-category">
-                                ctf
+                            <a href="/Zzhanp.github.io/categories/PHP/" class="post-category">
+                                PHP
                             </a>
                         
                     </div>
@@ -468,7 +460,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2020-07-11
+                    2021-03-02
                 </div>
                 
 
@@ -484,28 +476,41 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="信安实验室之MISC"><a href="#信安实验室之MISC" class="headerlink" title="信安实验室之MISC"></a>信安实验室之MISC</h1><p>本以为进不去实验室了，没想到老天眷顾，给了我这次机会，那便好好努力吧！</p>
-<h2 id="Welcome"><a href="#Welcome" class="headerlink" title="Welcome"></a>Welcome</h2><p>签到题，给了一串字符</p>
-<p>ZmxhZ3tXZTFjMG1lX3QwX0IxVF9OU0MhfQ==</p>
-<p>Base64加密，解密即可得</p>
-<p>flag{We1c0me_t0_B1T_NSC!}</p>
-<p><strong>这里想说的是后面有俩等号的都是base64加密</strong></p>
-<h2 id="PDF-1"><a href="#PDF-1" class="headerlink" title="PDF_1"></a>PDF_1</h2><p>第一次遇到pdf的题，打开看到是一张图片，一开始我还想着把pdf改成jpg或png呢。。。太傻了简直。。</p>
-<p>猜想flag隐藏在图片下方，如何移开图片呢？</p>
-<p>1.利用在线工具：<a href="https://app.xunjiepdf.com/pdf2word" target="_blank" rel="noopener">https://app.xunjiepdf.com/pdf2word</a> 将pdf转换为word，从而移开图片</p>
-<p><img src="https://zzhanp-1257986342.cos.ap-beijing.myqcloud.com/img/ctf2.png" alt="ctf2" style="zoom: 50%;"></p>
-<p>可以看到左上角有一行flag</p>
-<p>2.apowerpdf 本地工具打开pdf,将照片移开得到flag</p>
-<p>3.用Linux自带工具pdftotext将pdf转为txt</p>
-<p><img src="https://zzhanp-1257986342.cos.ap-beijing.myqcloud.com/img/ctf1.png" alt="ctf1"></p>
-<p>转为txt后，用grep查找flag或者直接打开txt来查找</p>
-<h2 id="数独"><a href="#数独" class="headerlink" title="数独"></a>数独</h2><p>给了一个数独，并提示：flag：第一行和最后一行连接形成的字符串，再经过MD5转换，取32位大写</p>
-<p>emm然而我并不会解数独。。。不过还好有万能的百度</p>
-<p><img src="https://zzhanp-1257986342.cos.ap-beijing.myqcloud.com/img/ctf3.png" alt="ctf3" style="zoom:67%;"></p>
-<p>第一行加最后一行是267381945895143267</p>
-<p>MD5转换得：ae382493d0b370d6959d8b44ab128bda</p>
-<p>转换大写即可flag{AE382493D0B370D6959D8B44AB128BDA}</p>
-<h2 id="DIO-1"><a href="#DIO-1" class="headerlink" title="DIO_1"></a>DIO_1</h2>
+                <h1 id="PHP学习"><a href="#PHP学习" class="headerlink" title="PHP学习"></a>PHP学习</h1><h2 id="PHP基础"><a href="#PHP基础" class="headerlink" title="PHP基础"></a>PHP基础</h2><h3 id="搭建环境"><a href="#搭建环境" class="headerlink" title="搭建环境"></a><strong>搭建环境</strong></h3><p><strong>静态网站访问流程：</strong></p>
+<p>本地DNS和网络DNS，先经过本地DNS寻找，再去网络DNS寻找。</p>
+<p>/index.heml：URI（Identifier）统一资源标识，目标机器上相对某个文件夹的相对路径。</p>
+<p>Apache根据URI获取文件，读取文件内容。</p>
+<p><strong>动态网站访问流程：</strong></p>
+<p>与静态差不多，但多出几个内容：<strong>服务器端解析、数据库</strong>。</p>
+<p><strong>Apache目录结构：</strong></p>
+<p>bin：windows下的一些可执行文件</p>
+<p>conf：配置文件目录</p>
+<p>htdocs：Apache默认的主机地址</p>
+<p>凡是涉及到Apache配置文件的修改，需要重启Apache才能生效。</p>
+<p><strong>PHP目录结构：</strong></p>
+<p>ext：扩展包，PHP很多功能是通过加载扩展来实现。</p>
+<p>PHP.exe：PHP解释器</p>
+<h3 id="PHP语法基础"><a href="#PHP语法基础" class="headerlink" title="PHP语法基础"></a><strong>PHP语法基础</strong></h3><p><strong>php代码标记：</strong>&lt;?php php代码?&gt;</p>
+<p><strong>php注释：</strong></p>
+<p>行注释：//或#</p>
+<p>块注释：一次注释多行</p>
+<p>/<em> xxxxxx</em>/</p>
+<p><strong>php语句分隔符：</strong>分号“;”（英文状态）</p>
+<p>特殊说明：</p>
+<p>1、PHP中标记结束符?&gt;有自带语句结束符的效果，最后一行PHP代码可以没有语句结束符“;”。</p>
+<p>2、PHP中很多代码的书写并不是嵌入到HTML中，而是单独存在，通常书写习惯中不建议使用标记结束符?&gt;</p>
+<h4 id="变量"><a href="#变量" class="headerlink" title="变量"></a><strong>变量</strong></h4><p><strong>定义变量：</strong>php中不需要任何关键字定义变量，所有变量必须使用“$”。</p>
+<p><code>$var1;</code></p>
+<p><code>$var2 = 1;</code></p>
+<p><strong>访问变量：</strong>echo $var2; //通过var2变量名字找到存储内容1，然后输出。</p>
+<p><strong>删除变量：</strong>使用unset，unset($var2)</p>
+<p><strong>变量命名规则：</strong>由字母、数字和下划线构成，不能以数字开头。</p>
+<p><strong>预定义变量：</strong><code>$_GET,$_POST,$_REQUEST,$_COOKIE,$_SERVER</code>等。</p>
+<p>$_GET:获取所有表单以get方式提交的数据。</p>
+<p>变量传值：将一个变量赋值给另外一个变量</p>
+<p>值传递：讲变量保存的值复制一份，然后将新的值给另外一个变量保存。</p>
+<p>引用传递：将变量保存的值所在的内存地址，传递给另一个变量，两个变量指向同一块内存空间。</p>
+
             </div>
             <hr>
 
@@ -530,7 +535,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://zzhanp.github.io/Zzhanp.github.io/2020/07/11/信安实验室之MISC/">https://zzhanp.github.io/Zzhanp.github.io/2020/07/11/信安实验室之MISC/</a>
+                    <a href="https://zzhanp.github.io/Zzhanp.github.io/2021/03/02/PHP/">https://zzhanp.github.io/Zzhanp.github.io/2021/03/02/PHP/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -568,16 +573,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/Zzhanp.github.io/tags/ctf/">
-                                    <span class="chip bg-color">ctf</span>
-                                </a>
-                            
-                                <a href="/Zzhanp.github.io/tags/misc/">
-                                    <span class="chip bg-color">misc</span>
-                                </a>
-                            
-                                <a href="/Zzhanp.github.io/tags/信安实验室/">
-                                    <span class="chip bg-color">信安实验室</span>
+                                <a href="/Zzhanp.github.io/tags/PHP/">
+                                    <span class="chip bg-color">PHP</span>
                                 </a>
                             
                         </div>
@@ -749,34 +746,33 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/Zzhanp.github.io/2021/03/02/PHP/">
+                <a href="/Zzhanp.github.io/2021/03/05/Web安全学习/">
                     <div class="card-image">
                         
                         
-                        <img src="/Zzhanp.github.io/medias/featureimages/16.jpg" class="responsive-img" alt="PHP">
+                        <img src="/Zzhanp.github.io/medias/featureimages/3.jpg" class="responsive-img" alt="Web安全学习">
                         
-                        <span class="card-title">PHP</span>
+                        <span class="card-title">Web安全学习</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            PHP学习PHP基础搭建环境静态网站访问流程：
-本地DNS和网络DNS，先经过本地DNS寻找，再去网络DNS寻找。
-/index.heml：URI（Identifier）统一资源标识，目标机器上相对某个文件夹的相对路径。
-Apache根据U
+                            Web安全学习HTTPHTTP(HyperText Transfer Protocol)即超文本传输协议，它允许将HTML文档从Web服务器传送到Web浏览器。
+URL：统一资源定位符，即网页地址。标准格式：
+协议://服务器IP[:端口]
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-03-02
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-03-05
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/Zzhanp.github.io/categories/PHP/" class="post-category">
-                                    PHP
+                            <a href="/Zzhanp.github.io/categories/Web安全/" class="post-category">
+                                    Web安全
                                 </a>
                             
                             
@@ -786,8 +782,8 @@ Apache根据U
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/Zzhanp.github.io/tags/PHP/">
-                        <span class="chip bg-color">PHP</span>
+                    <a href="/Zzhanp.github.io/tags/Web安全/">
+                        <span class="chip bg-color">Web安全</span>
                     </a>
                     
                 </div>
@@ -801,30 +797,28 @@ Apache根据U
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/Zzhanp.github.io/2020/05/10/bugku-web-wp/">
+                <a href="/Zzhanp.github.io/2020/07/11/信安实验室之MISC/">
                     <div class="card-image">
                         
                         
-                        <img src="/Zzhanp.github.io/medias/featureimages/15.jpg" class="responsive-img" alt="bugku-web-wp">
+                        <img src="/Zzhanp.github.io/medias/featureimages/1.jpg" class="responsive-img" alt="信安实验室之MISC">
                         
-                        <span class="card-title">bugku-web-wp</span>
+                        <span class="card-title">信安实验室之MISC</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            bugku-web最近学校的ctf比赛开始了，但是尝试了一下，几乎一道都做不出来。。。
-唉。。还是稳扎稳打，一步一步来吧
-web2F12查看源代码
-
-计算器这道题是让你输个验证码，但是输的时候发现只能输一位数字。
-F12，修改验证框的大小
-
+                            信安实验室之MISC本以为进不去实验室了，没想到老天眷顾，给了我这次机会，那便好好努力吧！
+Welcome签到题，给了一串字符
+ZmxhZ3tXZTFjMG1lX3QwX0IxVF9OU0MhfQ==
+Base64加密，解密即可得
+flag
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-10
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-11
                             </span>
                         <span class="publish-author">
                             
@@ -845,12 +839,12 @@ F12，修改验证框的大小
                         <span class="chip bg-color">ctf</span>
                     </a>
                     
-                    <a href="/Zzhanp.github.io/tags/bugku/">
-                        <span class="chip bg-color">bugku</span>
+                    <a href="/Zzhanp.github.io/tags/misc/">
+                        <span class="chip bg-color">misc</span>
                     </a>
                     
-                    <a href="/Zzhanp.github.io/tags/web/">
-                        <span class="chip bg-color">web</span>
+                    <a href="/Zzhanp.github.io/tags/信安实验室/">
+                        <span class="chip bg-color">信安实验室</span>
                     </a>
                     
                 </div>

@@ -4,7 +4,7 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Web安全学习, 清风堂">
+    <meta name="keywords" content="sql学习, 清风堂">
     <meta name="description" content="学习-感悟-生活">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Web安全学习 | 清风堂</title>
+    <title>sql学习 | 清风堂</title>
     <link rel="icon" type="image/png" href="/Zzhanp.github.io/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/Zzhanp.github.io/libs/awesome/css/all.css">
@@ -305,12 +305,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/Zzhanp.github.io/medias/featureimages/3.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/Zzhanp.github.io/medias/featureimages/16.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Web安全学习</h1>
+                    <h1 class="description center-align post-title">sql学习</h1>
                 </div>
             </div>
         </div>
@@ -435,8 +435,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/Zzhanp.github.io/tags/Web安全/">
-                                <span class="chip bg-color">Web安全</span>
+                            <a href="/Zzhanp.github.io/tags/sql学习/">
+                                <span class="chip bg-color">sql学习</span>
                             </a>
                         
                     </div>
@@ -460,7 +460,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2021-03-05
+                    2021-03-25
                 </div>
                 
 
@@ -476,60 +476,62 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Web安全学习"><a href="#Web安全学习" class="headerlink" title="Web安全学习"></a>Web安全学习</h1><h2 id="HTTP"><a href="#HTTP" class="headerlink" title="HTTP"></a>HTTP</h2><p>HTTP(HyperText Transfer Protocol)即超文本传输协议，它允许将HTML文档从Web服务器传送到Web浏览器。</p>
-<p>URL：统一资源定位符，即网页地址。标准格式：</p>
-<p><strong>协议://服务器IP[:端口]/路径/[?查询]，如<a href="http://www.xxser.com/post/httpxieyi.html" target="_blank" rel="noopener">http://www.xxser.com/post/httpxieyi.html</a></strong></p>
-<p>Windows中，可以用curl.exe工具，通过curl+URL命令即可发起一个HTTP请求。</p>
-<p>HTTP是一种无状态的协议。当一个客户端向服务器端发出请求，然后Web服务器返回响应（Response），连接就被关闭了，在服务器端不保留连接的有关信息。<strong>HTTP请求只能由客户端发起，而服务器不能主动向客户端发送数据。</strong></p>
-<h3 id="HTTP请求"><a href="#HTTP请求" class="headerlink" title="HTTP请求"></a>HTTP请求</h3><p><code>GET / HTTP/1.1</code>                     <!--请求行--><br><code>Host: www.baidu.com</code>          <!--请求头--><br><code>User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:86.0) Gecko/20100101 Firefox/86.0</code></p>
-<p>请求行由说明该请求是GET请求，使用的是HTTP1.1版本。</p>
-<p>请求头中，HOST代表请求的主机地址，User-Agent代表浏览器的标识。</p>
-<h3 id="HTTP请求方法"><a href="#HTTP请求方法" class="headerlink" title="HTTP请求方法"></a>HTTP请求方法</h3><p>GET：GET方法用于获取请求页面的指定信息。</p>
-<p>HEAD：HEAD方法除了服务器不能在响应里返回消息主体外，其他都与FET方法相同。</p>
-<p>POST：向服务器传输大量的数据，通常使用POST请求。</p>
-<h3 id="HTTP状态码"><a href="#HTTP状态码" class="headerlink" title="HTTP状态码"></a>HTTP状态码</h3><p>1xx：信息提示，标识请求已被成功接收，继续处理，其范围为100~101.</p>
-<p>2xx：成功，服务器成功地处理了请求，范围为200~206.</p>
-<p>3xx：重定向，用于告诉浏览器客户端，他们访问的资源已被移动，并告诉客户端新的资源地址位置。</p>
-<p>4xx：客户端错误状态码，有时客户端会发送一些服务器无法处理的东西，比如格式错误的请求，或者最常见的是，请求一个不存在的URL。</p>
-<p>5xx：描述服务器内部错误。</p>
-<p><strong>常见状态码：</strong></p>
-<p>200：客户端请求成功，是最常见的状态。</p>
-<p>302：重定向。</p>
-<p>404：请求资源不存在。</p>
-<p>400：客户端请求有语法错误，不能被服务器所理解。</p>
-<p>401：请求未经授权。</p>
-<p>403：服务器收到请求，但是拒绝提供服务。</p>
-<p>500：服务器内部错误，是最常见的状态。</p>
-<p>503：服务器当前不能处理客户端的请求，一段时间后可能恢复正常。</p>
-<h3 id="HTTP消息"><a href="#HTTP消息" class="headerlink" title="HTTP消息"></a>HTTP消息</h3><p>又称HTTP头（HTTP header），由请求头、响应头、普通头和实体头组成。</p>
-<p><strong>请求头：</strong></p>
-<p>请求头只出现在HTTP请求中，常用的HTTP请求头如下：</p>
-<p>Host：指定被请求资源的Internet主机和端口号。</p>
-<p>User-Agent：允许客户端将它的操作系统、浏览器和其他属性告诉服务器。</p>
-<p>Referer：Referer包含一个URL，代表当前访问URL的上一个URL。如：Referer:<a href="http://www.xxser.com/login.php，代表用户从login.php来到当前页面。" target="_blank" rel="noopener">www.xxser.com/login.php，代表用户从login.php来到当前页面。</a></p>
-<p>Cookie：它是一段文本，常用来表示请求者身份。</p>
-<p>Range：可以请求实体的部分内容，多线程下载一定会用到此请求头。</p>
-<p>x-forward-for：即XFF头，他代表请求端的IP，可以有多个，中间以逗号隔开。</p>
-<p>Accept：用于指定客户端接收哪些MIME类型的消息，如Accept：text/html，表明客户端希望接收HTML文本。</p>
-<p><strong>响应头：</strong></p>
-<p>Server：服务器所使用的Web服务器名称，如Server:Apache/1.3.6(Unix)，攻击者通过查看此头，可以探测Web服务器名称。</p>
-<p>Set-Cookie：向客户端设置Cookie，通过查看此头，可以清楚地看到服务器向客户端发送的Cookie信息。</p>
-<p>Lsat-Modified：服务器通过这个头告诉浏览器，资源的最后修改时间。</p>
-<p>Location：告诉浏览器去访问哪个页面，浏览器收到此请求后，通常会立刻访问Location头所指向地页面。这个头通常配合302状态码使用.</p>
-<p>Refresh：告诉浏览器定时刷新浏览器。</p>
-<h3 id="HTTP协议与HTTPS协议的区别"><a href="#HTTP协议与HTTPS协议的区别" class="headerlink" title="HTTP协议与HTTPS协议的区别"></a>HTTP协议与HTTPS协议的区别</h3><p>HTTPS：Hyper Text Transfer Protocol over SecureSocket Layer，是以安全为目标地HTTP通道。</p>
-<p>HTTPS地安全基础是SSL 。</p>
-<p>HTTP 是超文本传输协议，信息是明文传输，HTTPS则是具有安全性地SSL加密传输协议。</p>
-<p>HTTP采用80端口连接，HTTP是443端口。</p>
-<p>HTTPS协议需要到ca申请证书。</p>
-<h2 id="信息探测"><a href="#信息探测" class="headerlink" title="信息探测"></a>信息探测</h2><h3 id="Google-Hack"><a href="#Google-Hack" class="headerlink" title="Google Hack"></a>Google Hack</h3><h4 id="搜集Web信息"><a href="#搜集Web信息" class="headerlink" title="搜集Web信息"></a>搜集Web信息</h4><p>site：指定域名</p>
-<p>intext：正文中存在关键字地网页</p>
-<p>intitle：标题中存在关键字地网页</p>
-<p>info：一些基本信息</p>
-<p>inurl：URL存在关键字地网页</p>
-<p>filetype：搜索指定文件类型</p>
-<p>例：intitle:管理登录 filetype:php：查询网页标题含有“管理登录”，并且为php类型地网页。</p>
-<h2 id="SQL注入"><a href="#SQL注入" class="headerlink" title="SQL注入"></a>SQL注入</h2>
+                <h1 id="SQL学习"><a href="#SQL学习" class="headerlink" title="SQL学习"></a>SQL学习</h1><h2 id="mysql创建数据库"><a href="#mysql创建数据库" class="headerlink" title="mysql创建数据库"></a>mysql创建数据库</h2><p>用create命令创建数据库：</p>
+<p><code>CREATE DATABASE 数据库名;</code></p>
+<h2 id="mysql删除数据库"><a href="#mysql删除数据库" class="headerlink" title="mysql删除数据库"></a>mysql删除数据库</h2><p>用drop命令删除数据库：</p>
+<p><code>drop database &lt;数据库名&gt;;</code></p>
+<h2 id="创建数据表"><a href="#创建数据表" class="headerlink" title="创建数据表"></a>创建数据表</h2><p>通用语法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">CREATE TABLE table_name (column_name column_type);</span><br></pre></td></tr></table></figure>
+<h2 id="删除数据表"><a href="#删除数据表" class="headerlink" title="删除数据表"></a>删除数据表</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DROP TABLE table_name;</span><br></pre></td></tr></table></figure>
+<p>例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">root@host# mysql -u root -p</span><br><span class="line">Enter password:*******</span><br><span class="line">mysql&gt; use RUNOOB;</span><br><span class="line">Database changed</span><br><span class="line">mysql&gt; DROP TABLE runoob_tbl</span><br><span class="line">Query OK, 0 rows affected (0.8 sec)</span><br><span class="line">mysql&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="插入数据"><a href="#插入数据" class="headerlink" title="插入数据"></a>插入数据</h2><p>使用INSERT INTO 语句来插入数据，语法如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">INSERT INTO table_name ( field1, field2,...fieldN )</span><br><span class="line">                       VALUES</span><br><span class="line">                       ( value1, value2,...valueN );</span><br></pre></td></tr></table></figure>
+<p>如果数据是字符型，必须使用单引号或双引号，如”value”。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; INSERT INTO runoob_tbl </span><br><span class="line">    -&gt; (runoob_title, runoob_author, submission_date)</span><br><span class="line">    -&gt; VALUES</span><br><span class="line">    -&gt; (&quot;学习 PHP&quot;, &quot;菜鸟教程&quot;, NOW());</span><br></pre></td></tr></table></figure>
+<h2 id="查询数据"><a href="#查询数据" class="headerlink" title="查询数据"></a>查询数据</h2><p>使用SELECT语句来查询数据，语法如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">SELECT column_name,column_name</span><br><span class="line">FROM table_name</span><br><span class="line">[WHERE Clause]</span><br><span class="line">[LIMIT N][ OFFSET M]</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>查询语句中你可以使用一个或者多个表，表之间使用逗号(,)分割，并使用WHERE语句来设定查询条件。</p>
+</li>
+<li><p>SELECT 命令可以读取一条或者多条记录。</p>
+</li>
+<li><p>你可以使用星号（*）来代替其他字段，SELECT语句会返回表的所有字段数据</p>
+</li>
+<li><p>你可以使用 WHERE 语句来包含任何条件。</p>
+</li>
+<li><p>你可以使用 LIMIT 属性来设定返回的记录数。</p>
+</li>
+<li><p>你可以通过OFFSET指定SELECT语句开始查询的数据偏移量。默认情况下偏移量为0。</p>
+</li>
+<li><p>例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select * from runoob_tbl;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="WHERE子句"><a href="#WHERE子句" class="headerlink" title="WHERE子句"></a>WHERE子句</h2><p>查询数据使用SQL SELECT语句，若要有条件地选取数据，可将WHERE子句添加到SELECT语句中。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">SELECT field1, field2,...fieldN FROM table_name1, table_name2...</span><br><span class="line">[WHERE condition1 [AND [OR]] condition2.....</span><br></pre></td></tr></table></figure>
+<ul>
+<li>WHERE 子句类似于程序语言中的 if 条件，根据 MySQL 表中的字段值来读取指定的数据。</li>
+</ul>
+<h2 id="UPDATE更新"><a href="#UPDATE更新" class="headerlink" title="UPDATE更新"></a>UPDATE更新</h2><p>如果需要修改或更新mysql中的数据，可以用SQL UPDATE命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">UPDATE table_name SET field1=new-value1, field2=new-value2</span><br><span class="line">[WHERE Clause]</span><br></pre></td></tr></table></figure>
+<ul>
+<li>你可以同时更新一个或多个字段。</li>
+<li>你可以在 WHERE 子句中指定任何条件。</li>
+<li>你可以在一个单独表中同时更新数据。</li>
+</ul>
+<p>例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; UPDATE runoob_tbl SET runoob_title=&apos;学习 C++&apos; WHERE runoob_id=3; </span><br><span class="line">Query OK, 1 rows affected (0.01 sec)  </span><br><span class="line">mysql&gt; SELECT * from runoob_tbl WHERE runoob_id=3; </span><br><span class="line">+-----------+--------------+---------------+---------------+ </span><br><span class="line">| runoob_id | runoob_title | runoob_author | submission_date </span><br><span class="line">+-----------+--------------+---------------+---------------+ | 3         | 学习 C++   | RUNOOB.COM    | 2016-05-06      | +-----------+--------------+---------------+---------------+ 1 rows in set (0.01 sec)</span><br></pre></td></tr></table></figure>
+<h2 id="UNION查询"><a href="#UNION查询" class="headerlink" title="UNION查询"></a>UNION查询</h2><p>MySQL UNION 操作符用于连接两个以上的 SELECT 语句的结果组合到一个结果集合中。多个 SELECT 语句会删除重复的数据。语法如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">SELECT expression1, expression2, ... expression_n</span><br><span class="line">FROM tables</span><br><span class="line">[WHERE conditions]</span><br><span class="line">UNION [ALL | DISTINCT]</span><br><span class="line">SELECT expression1, expression2, ... expression_n</span><br><span class="line">FROM tables</span><br><span class="line">[WHERE conditions];</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>expression1, expression2, … expression_n</strong>: 要检索的列。</li>
+<li><strong>tables:</strong> 要检索的数据表。</li>
+<li><strong>WHERE conditions:</strong> 可选， 检索条件。</li>
+<li><strong>DISTINCT:</strong> 可选，删除结果集中重复的数据。默认情况下 UNION 操作符已经删除了重复数据，所以 DISTINCT 修饰符对结果没啥影响。</li>
+<li><strong>ALL:</strong> 可选，返回所有结果集，包含重复数据。</li>
+</ul>
+
             </div>
             <hr>
 
@@ -554,7 +556,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://zzhanp.github.io/Zzhanp.github.io/2021/03/05/Web安全学习/">https://zzhanp.github.io/Zzhanp.github.io/2021/03/05/Web安全学习/</a>
+                    <a href="https://zzhanp.github.io/Zzhanp.github.io/2021/03/25/sql学习/">https://zzhanp.github.io/Zzhanp.github.io/2021/03/25/sql学习/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -592,8 +594,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/Zzhanp.github.io/tags/Web安全/">
-                                    <span class="chip bg-color">Web安全</span>
+                                <a href="/Zzhanp.github.io/tags/sql学习/">
+                                    <span class="chip bg-color">sql学习</span>
                                 </a>
                             
                         </div>
@@ -763,7 +765,8 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
                 <a href="/Zzhanp.github.io/2021/03/25/sql学习/">
                     <div class="card-image">
@@ -786,9 +789,9 @@ drop database &lt;数据库名&gt;;
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-03-25
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-25
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -801,6 +804,7 @@ drop database &lt;数据库名&gt;;
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -819,27 +823,26 @@ drop database &lt;数据库名&gt;;
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/Zzhanp.github.io/2021/03/02/PHP/">
+                <a href="/Zzhanp.github.io/2021/03/05/Web安全学习/">
                     <div class="card-image">
                         
                         
-                        <img src="/Zzhanp.github.io/medias/featureimages/16.jpg" class="responsive-img" alt="PHP">
+                        <img src="/Zzhanp.github.io/medias/featureimages/3.jpg" class="responsive-img" alt="Web安全学习">
                         
-                        <span class="card-title">PHP</span>
+                        <span class="card-title">Web安全学习</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            PHP学习PHP基础搭建环境静态网站访问流程：
-本地DNS和网络DNS，先经过本地DNS寻找，再去网络DNS寻找。
-/index.heml：URI（Identifier）统一资源标识，目标机器上相对某个文件夹的相对路径。
-Apache根据U
+                            Web安全学习HTTPHTTP(HyperText Transfer Protocol)即超文本传输协议，它允许将HTML文档从Web服务器传送到Web浏览器。
+URL：统一资源定位符，即网页地址。标准格式：
+协议://服务器IP[:端口]
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-02
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-05
                             </span>
                         <span class="publish-author">
                             
@@ -856,8 +859,8 @@ Apache根据U
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/Zzhanp.github.io/tags/PHP/">
-                        <span class="chip bg-color">PHP</span>
+                    <a href="/Zzhanp.github.io/tags/Web安全/">
+                        <span class="chip bg-color">Web安全</span>
                     </a>
                     
                 </div>

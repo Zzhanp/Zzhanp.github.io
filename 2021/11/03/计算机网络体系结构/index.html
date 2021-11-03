@@ -4,7 +4,7 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="信安实验室之MISC, 清风堂">
+    <meta name="keywords" content="计算机网络体系结构, 清风堂">
     <meta name="description" content="学习-感悟-生活">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>信安实验室之MISC | 清风堂</title>
+    <title>计算机网络体系结构 | 清风堂</title>
     <link rel="icon" type="image/png" href="/Zzhanp.github.io/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/Zzhanp.github.io/libs/awesome/css/all.css">
@@ -305,12 +305,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/Zzhanp.github.io/medias/featureimages/1.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/Zzhanp.github.io/medias/featureimages/0.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">信安实验室之MISC</h1>
+                    <h1 class="description center-align post-title">计算机网络体系结构</h1>
                 </div>
             </div>
         </div>
@@ -435,16 +435,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/Zzhanp.github.io/tags/ctf/">
-                                <span class="chip bg-color">ctf</span>
-                            </a>
-                        
-                            <a href="/Zzhanp.github.io/tags/misc/">
-                                <span class="chip bg-color">misc</span>
-                            </a>
-                        
-                            <a href="/Zzhanp.github.io/tags/信安实验室/">
-                                <span class="chip bg-color">信安实验室</span>
+                            <a href="/Zzhanp.github.io/tags/计算机网络/">
+                                <span class="chip bg-color">计算机网络</span>
                             </a>
                         
                     </div>
@@ -455,8 +447,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/Zzhanp.github.io/categories/ctf/" class="post-category">
-                                ctf
+                            <a href="/Zzhanp.github.io/categories/学习笔记/" class="post-category">
+                                学习笔记
                             </a>
                         
                     </div>
@@ -468,7 +460,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2020-07-11
+                    2021-11-03
                 </div>
                 
 
@@ -484,28 +476,177 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="信安实验室之MISC"><a href="#信安实验室之MISC" class="headerlink" title="信安实验室之MISC"></a>信安实验室之MISC</h1><p>本以为进不去实验室了，没想到老天眷顾，给了我这次机会，那便好好努力吧！</p>
-<h2 id="Welcome"><a href="#Welcome" class="headerlink" title="Welcome"></a>Welcome</h2><p>签到题，给了一串字符</p>
-<p>ZmxhZ3tXZTFjMG1lX3QwX0IxVF9OU0MhfQ==</p>
-<p>Base64加密，解密即可得</p>
-<p>flag{We1c0me_t0_B1T_NSC!}</p>
-<p><strong>这里想说的是后面有俩等号的都是base64加密</strong></p>
-<h2 id="PDF-1"><a href="#PDF-1" class="headerlink" title="PDF_1"></a>PDF_1</h2><p>第一次遇到pdf的题，打开看到是一张图片，一开始我还想着把pdf改成jpg或png呢。。。太傻了简直。。</p>
-<p>猜想flag隐藏在图片下方，如何移开图片呢？</p>
-<p>1.利用在线工具：<a href="https://app.xunjiepdf.com/pdf2word" target="_blank" rel="noopener">https://app.xunjiepdf.com/pdf2word</a> 将pdf转换为word，从而移开图片</p>
-<p><img src="https://zzhanp-1257986342.cos.ap-beijing.myqcloud.com/img/ctf2.png" alt="ctf2" style="zoom: 50%;"></p>
-<p>可以看到左上角有一行flag</p>
-<p>2.apowerpdf 本地工具打开pdf,将照片移开得到flag</p>
-<p>3.用Linux自带工具pdftotext将pdf转为txt</p>
-<p><img src="https://zzhanp-1257986342.cos.ap-beijing.myqcloud.com/img/ctf1.png" alt="ctf1"></p>
-<p>转为txt后，用grep查找flag或者直接打开txt来查找</p>
-<h2 id="数独"><a href="#数独" class="headerlink" title="数独"></a>数独</h2><p>给了一个数独，并提示：flag：第一行和最后一行连接形成的字符串，再经过MD5转换，取32位大写</p>
-<p>emm然而我并不会解数独。。。不过还好有万能的百度</p>
-<p><img src="https://zzhanp-1257986342.cos.ap-beijing.myqcloud.com/img/ctf3.png" alt="ctf3" style="zoom:67%;"></p>
-<p>第一行加最后一行是267381945895143267</p>
-<p>MD5转换得：ae382493d0b370d6959d8b44ab128bda</p>
-<p>转换大写即可flag{AE382493D0B370D6959D8B44AB128BDA}</p>
-<h2 id="DIO-1"><a href="#DIO-1" class="headerlink" title="DIO_1"></a>DIO_1</h2>
+                <h1 id="计算机网络体系结构"><a href="#计算机网络体系结构" class="headerlink" title="计算机网络体系结构"></a>计算机网络体系结构</h1><h2 id="因特网概述"><a href="#因特网概述" class="headerlink" title="因特网概述"></a>因特网概述</h2><p>网络由若干结点和连接这些结点的链路组成。</p>
+<p>internet（互联网或互联网）：通用名词，泛指由多个计算机网络互连而成的网络。在这些网络之间的通信协议可以是任意的。</p>
+<p>Internet（专有名词）：指全球最大的、开放的、由众多网络相互连接而成的特定计算机网络，采用TCP/IP协议作为通信的规则，前身是美国的ARPANET。</p>
+<h3 id="因特网发展的三个阶段"><a href="#因特网发展的三个阶段" class="headerlink" title="因特网发展的三个阶段"></a>因特网发展的三个阶段</h3><p> 单个网络ARPANET向互联网发展-&gt;逐步建成三级结构的因特网-&gt;逐步形成了多层次ISP结构的因特网</p>
+<p>1969年，第一个分组交换网ARPANET。</p>
+<h3 id="ISP"><a href="#ISP" class="headerlink" title="ISP"></a>ISP</h3><p>个人通过ISP接入到因特网</p>
+<p>主干ISP：因特网主干网，直接互联</p>
+<p>地区ISP：区域性或国家性覆盖规模</p>
+<p>本地ISP：校园网、企业网、移动用户</p>
+<p>相隔较远的两台主机通信：主机A-&gt;本地ISP-&gt;地区ISP-&gt; 主干ISP-&gt; 地区ISP-&gt;本地ISP-&gt;主机B</p>
+<h3 id="因特网标准化工作"><a href="#因特网标准化工作" class="headerlink" title="因特网标准化工作"></a>因特网标准化工作</h3><p>RFC</p>
+<h3 id="因特网的组成"><a href="#因特网的组成" class="headerlink" title="因特网的组成"></a>因特网的组成</h3><p>边缘部分：由所有连接在因特网上的<strong>主机</strong>组成。用户直接使用，用来<strong>通信（传送数据、音频或视频）和资源共享</strong>。</p>
+<p>核心部分：由<strong>大量网络</strong>和连接这些网络的<strong>路由器</strong>组成。为边缘部分提供服务（提供连通性和交换）。</p>
+<h2 id="三种交换方式"><a href="#三种交换方式" class="headerlink" title="三种交换方式"></a>三种交换方式</h2><h3 id="电路交换"><a href="#电路交换" class="headerlink" title="电路交换"></a>电路交换</h3><p>前提：所有电话机两两相连接不现实。</p>
+<p>定义：电话交换机接通电话线的方式。</p>
+<p>步骤：</p>
+<ol>
+<li>建立连接（分配通信资源）</li>
+<li>通话（一直占用通信资源）</li>
+<li>释放连接（归还通信资源）</li>
+</ol>
+<p>电路交换传送计算机数据时，线路传输效率低</p>
+<h3 id="分组交换（重点）"><a href="#分组交换（重点）" class="headerlink" title="分组交换（重点）"></a>分组交换（重点）</h3><p>发送方：构造分组、发送分组</p>
+<p>路由器：存储转发</p>
+<p>接收方：接收分组、还原报文</p>
+<h3 id="报文交换"><a href="#报文交换" class="headerlink" title="报文交换"></a>报文交换</h3><p>对报文大小无限制，交换结点需要有较大缓存空间，用于早期电报。</p>
+<h3 id="对比"><a href="#对比" class="headerlink" title="对比"></a>对比</h3><p>分组交换：随时发送分组，不需要事先建立连接。分组在交换机进行存储转发，减少了转发时延，避免过长的报文长时间占用链路，同时有利于进行差错控制。</p>
+<p>电路交换：比特流直达终点。</p>
+<p>报文交换：报文需要在各节点交换机进行存储转发。</p>
+<h4 id="电路交换优点"><a href="#电路交换优点" class="headerlink" title="电路交换优点"></a>电路交换优点</h4><ul>
+<li>数据直达，通信时延小</li>
+<li>有序传输</li>
+<li>没有冲突</li>
+<li>适用范围广（既适用于传输数字信号，也可模拟信号）</li>
+<li>实时性强</li>
+<li>控制简单</li>
+</ul>
+<h4 id="电路交换缺点"><a href="#电路交换缺点" class="headerlink" title="电路交换缺点"></a>电路交换缺点</h4><ul>
+<li>建立连接时间长</li>
+<li>线路独占，使用效率低</li>
+<li>灵活性差，任何一点出现故障，需要重新连接</li>
+<li>难以规格化</li>
+</ul>
+<h4 id="报文交换优点"><a href="#报文交换优点" class="headerlink" title="报文交换优点"></a>报文交换优点</h4><ul>
+<li>无需建立连接</li>
+<li>动态分配线路</li>
+<li>提高线路可靠性，某条路故障，选择另一条路</li>
+<li>提高线路利用率</li>
+<li>提供多目标服务，同时发给多个目标地址</li>
+</ul>
+<h4 id="报文交换缺点"><a href="#报文交换缺点" class="headerlink" title="报文交换缺点"></a>报文交换缺点</h4><ul>
+<li>引起了转发时延</li>
+<li>需要较大存储缓存空间</li>
+<li>需要传输额外信息量</li>
+</ul>
+<h4 id="分组交换优点"><a href="#分组交换优点" class="headerlink" title="分组交换优点"></a>分组交换优点</h4><ul>
+<li>无需建立连接</li>
+<li>线路利用率高</li>
+<li>简化了存储管理</li>
+<li>加速传输，后一个的存储和前一个的转发可以同时进行</li>
+<li>减少出错概率和重发数据量</li>
+</ul>
+<h4 id="分组交换缺点"><a href="#分组交换缺点" class="headerlink" title="分组交换缺点"></a>分组交换缺点</h4><ul>
+<li>引起了转发时延</li>
+<li>需要传输额外的信息量</li>
+<li>对于数据报服务，存在丢序、丢失或重复分组的问题；对于虚电路服务，存在呼叫建立、数据传输和虚电路释放三个过程</li>
+</ul>
+<h2 id="计算机网络的定义和分类"><a href="#计算机网络的定义和分类" class="headerlink" title="计算机网络的定义和分类"></a>计算机网络的定义和分类</h2><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><p>一些互相连接的、自治的计算机的集合</p>
+<p>自治：独立的计算机，有自己的硬件和软件，可以单独运行使用。</p>
+<p>计算机网络并非专门用来传输数据，而是能够支持很多种应用。</p>
+<h3 id="分类（重点）"><a href="#分类（重点）" class="headerlink" title="分类（重点）"></a>分类（重点）</h3><h4 id="按交换技术"><a href="#按交换技术" class="headerlink" title="按交换技术"></a>按交换技术</h4><p>电路交换网络、报文交换网络、分组交换网络</p>
+<h4 id="按使用者"><a href="#按使用者" class="headerlink" title="按使用者"></a>按使用者</h4><p>公用网、专用网</p>
+<h4 id="按传输介质"><a href="#按传输介质" class="headerlink" title="按传输介质"></a>按传输介质</h4><p>有线网络、无线网络</p>
+<h4 id="按覆盖范围"><a href="#按覆盖范围" class="headerlink" title="按覆盖范围"></a>按覆盖范围</h4><p><strong>广域网WAN</strong>：几十公里到几千公里，远程网。</p>
+<p>城域网MAN：范围一个城市。</p>
+<p><strong>局域网LAN</strong>：微型计算机或工作站通过高速通信线路相连（10Mb/s以上），校园网、企业网。</p>
+<p><strong>个域网PAN</strong>：10米，个人设备用无线技术连起来的网络，无线个人区域网WPAN。</p>
+<h4 id="按拓扑结构"><a href="#按拓扑结构" class="headerlink" title="按拓扑结构"></a>按拓扑结构</h4><p>总线型：</p>
+<p>星型：成本高，中央设备对故障敏感</p>
+<p>环型：单向传输</p>
+<p>网状型：可靠性高，线路复杂、成本高</p>
+<h2 id="计算机网络的性能指标"><a href="#计算机网络的性能指标" class="headerlink" title="计算机网络的性能指标"></a>计算机网络的性能指标</h2><h3 id="速率"><a href="#速率" class="headerlink" title="速率"></a>速率</h3><p>连接在计算机网络上的主机在数字信道上传送比特的速率，也称为<strong>比特率或数据率</strong>。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">比特，数据量的单位，1 Byte = 8 bit</span><br><span class="line">常用数据率单位：</span><br><span class="line">bit/s(b/s,bps)</span><br></pre></td></tr></table></figure>
+<h3 id="带宽（重点）"><a href="#带宽（重点）" class="headerlink" title="带宽（重点）"></a>带宽（重点）</h3><p>表示网络的通信线路所能传送数据的能力，网络带宽表示在单位时间内从网络的某一点到另一点所能通过的<strong>“最高数据率”</strong>。单位b/s，如家里的网为200M，即200Mb/s。</p>
+<h3 id="吞吐量"><a href="#吞吐量" class="headerlink" title="吞吐量"></a>吞吐量</h3><p>表示在<strong>单位时间内通过某个网络（或信道、接口）的数据量。受网络的带宽或额定速率的限制。</strong></p>
+<h3 id="时延（重点）"><a href="#时延（重点）" class="headerlink" title="时延（重点）"></a>时延（重点）</h3><p>发送时延：源主机将分组发往传输线路，分组长度(b)/发送速率(b/s)，发送速率由网卡的发送速率、信道带宽、交换机的接口速率决定。</p>
+<p>传播时延：电信号在链路传输，信道长度(m)/电磁波传播速率(m/s)，电磁波在铜线传播约为2.3x10^8 m/s，光纤约为2.0x10^8 m/s。</p>
+<p>处理时延：路由器收到分组后对其进行存储转发。</p>
+<h3 id="时延带宽积"><a href="#时延带宽积" class="headerlink" title="时延带宽积"></a>时延带宽积</h3><p><strong>指传播时延x带宽</strong>，以比特为单位的链路长度。</p>
+<h3 id="往返时间"><a href="#往返时间" class="headerlink" title="往返时间"></a>往返时间</h3><p>RTT：卫星网络耗时较多</p>
+<h3 id="利用率（重点）"><a href="#利用率（重点）" class="headerlink" title="利用率（重点）"></a>利用率（重点）</h3><p>信道利用率：表示某信道有百分之几的时间是被利用的（有数据通过），并非越高越好。</p>
+<p>网络利用率：全网络的信道利用率的加权平均</p>
+<p>当网络的利用率达到50%时，时延就要加倍。D=D0/(1-U).</p>
+<p>也不能使利用率太低，白白浪费通信资源。动态调整。</p>
+<h3 id="丢包率"><a href="#丢包率" class="headerlink" title="丢包率"></a>丢包率</h3><p>分组丢失率，<strong>丢失的分组数量与总分组数量的比率</strong>。</p>
+<p>分组在传输过程中出现<strong>误码</strong>，被结点丢弃。</p>
+<p>分组到达一台队列已满的分组交换机时被丢弃，在数据量较大时可能造成<strong>网络拥塞</strong>。</p>
+<p>反映了网络的拥塞情况。</p>
+<h2 id="计算机网络体系结构（重点）"><a href="#计算机网络体系结构（重点）" class="headerlink" title="计算机网络体系结构（重点）"></a>计算机网络体系结构（重点）</h2><h3 id="常见的计算机网络体系结构"><a href="#常见的计算机网络体系结构" class="headerlink" title="常见的计算机网络体系结构"></a>常见的计算机网络体系结构</h3><h4 id="OSI体系结构"><a href="#OSI体系结构" class="headerlink" title="OSI体系结构"></a>OSI体系结构</h4><p>法律上的国际标准</p>
+<ul>
+<li>应用层</li>
+<li>表示层</li>
+<li>会话层</li>
+<li>运输层</li>
+<li>网络层</li>
+<li>数据链路层</li>
+<li>物理层</li>
+</ul>
+<p>失败原因：</p>
+<p>1、OSI专家缺乏实际经验，OSI标准没有商业驱动力</p>
+<p>2、OSI协议实现起来很复杂，且效率低</p>
+<p>3、OSI标准制定周期太长，按OSI标准生产的设备无法及时进入市场</p>
+<p>4、OSI层次划分不太合理，有些功能在多个层次重复出现</p>
+<h4 id="TCP-IP体系结构"><a href="#TCP-IP体系结构" class="headerlink" title="TCP/IP体系结构"></a>TCP/IP体系结构</h4><p>事实上的国际标准</p>
+<ul>
+<li>应用层：HTTP、SMTP、DNS、RTP</li>
+<li>运输层：TCP、UDP</li>
+<li>网际层：IP</li>
+<li>网络接口层</li>
+</ul>
+<p>合并OSI物理层和数据链路层为网咯接口层，去掉了OSI的会话层和表示层。</p>
+<p>路由器一般只包含网络接口层和网际层。</p>
+<p>网络接口层并没有规定具体内容，因此TCP/IP只有上面三层。</p>
+<p>使用IP协议互联不同的网络接口（IP over everything），同时可以为各种网络应用提供服务（everything over IP）。</p>
+<h4 id="五层协议体系结构"><a href="#五层协议体系结构" class="headerlink" title="五层协议体系结构"></a>五层协议体系结构</h4><ul>
+<li>应用层</li>
+<li>运输层</li>
+<li>网络层</li>
+<li>数据链路层</li>
+<li>物理层</li>
+</ul>
+<h3 id="分层的必要性"><a href="#分层的必要性" class="headerlink" title="分层的必要性"></a>分层的必要性</h3><p>计算机网络是个非常复杂的系统</p>
+<p>分层可将庞大而复杂的问题，转化为若干较小的局部问题。</p>
+<p>物理层：解决使用何种信号来传输比特的问题</p>
+<p>数据链路层：解决分组在一个网络（或一段链路）上传输的问题</p>
+<p>网络层：解决分组在多个网络上传输（路由）的问题</p>
+<p>运输层：解决进程之间基于网络的通信问题</p>
+<p>应用层：解决通过应用进程的交互来实现特定网络应用的问题</p>
+<h3 id="专用术语"><a href="#专用术语" class="headerlink" title="专用术语"></a>专用术语</h3><p>实体：任何可发送或接收信息的硬件或软件进程。</p>
+<p>协议：控制两个对等实体进行<strong>逻辑通信</strong>的规则的集合。</p>
+<p>协议的三要素：</p>
+<p>语法：定义所交换信息的格式</p>
+<p>语义：定义收发双方所要完成的操作</p>
+<p>同步：定义收发双方的时序关系</p>
+<p>在协议的控制下，两个对等实体间的逻辑通信使得本层能够向上一层提供服务。</p>
+<p>要实现本层协议，还需要使用下面一层所提供的服务。</p>
+<p><strong>协议是水平的，服务是垂直的。</strong></p>
+<p>实体看得见相邻下层所提供的服务，但并不知道实现该服务的具体协议，下面的协议对上面的实体是<strong>“透明”</strong>的。</p>
+<p>协议数据单元PDU：<strong>对等层次之间传送的数据包</strong>称为该层的协议数据单元。</p>
+<p>服务数据单元SDU：<strong>同一系统内，层与层之间交换的数据包</strong>称为服务数据单元。</p>
+<h2 id="习题"><a href="#习题" class="headerlink" title="习题"></a>习题</h2><p>1、在OSI参考模型中，自下而上第一个提供端到端服务的层次是：传输层</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">传输层：解决进程之间基于网络的通信问题，提供端到端的逻辑通信</span><br><span class="line">传输层使用端口号为应用层的应用进程之间提供端到端的逻辑通信，而网络层仅仅为主机之间提供逻辑通信</span><br></pre></td></tr></table></figure>
+<p>2、TCP/IP参考模型的网络层提供的是：无连接不可靠的数据报服务</p>
+<p>3、在TCP/IP体系结构中，直接为ICMP提供服务的协议是：IP</p>
+<p>4、在OSI参考模型中，下列功能需由应用层的相邻层实现的是：数据格式转换</p>
+<p>5、时延：</p>
+<p><img src="https://zzhanp-1257986342.cos.ap-beijing.myqcloud.com/img/image-20211026202718538.png" alt="image-20211026202718538"></p>
+<p><img src="https://zzhanp-1257986342.cos.ap-beijing.myqcloud.com/img/image-20211026211812041.png" alt="image-20211026211812041" style="zoom:150%;"></p>
+<p><strong>n个发送时延+1个传播时延</strong></p>
+<p><img src="https://zzhanp-1257986342.cos.ap-beijing.myqcloud.com/img/image-20211026212155919.png" alt="image-20211026212155919"></p>
+<p><strong>n个分组，m段链路，总时延：</strong></p>
+<ul>
+<li><strong>n个分组的发送时延</strong></li>
+<li><strong>1个分组的发送时延 x (m-1)</strong></li>
+<li><strong>1段链路的传播时延 x m</strong></li>
+</ul>
+<p>6、</p>
+<p><img src="https://zzhanp-1257986342.cos.ap-beijing.myqcloud.com/img/image-20211026212517241.png" alt="image-20211026212517241"></p>
+<p>7、</p>
+<p><img src="https://zzhanp-1257986342.cos.ap-beijing.myqcloud.com/img/image-20211026214322285.png" alt="image-20211026214322285"></p>
+
             </div>
             <hr>
 
@@ -530,7 +671,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://zzhanp.github.io/Zzhanp.github.io/2020/07/11/信安实验室之MISC/">https://zzhanp.github.io/Zzhanp.github.io/2020/07/11/信安实验室之MISC/</a>
+                    <a href="https://zzhanp.github.io/Zzhanp.github.io/2021/11/03/计算机网络体系结构/">https://zzhanp.github.io/Zzhanp.github.io/2021/11/03/计算机网络体系结构/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -568,16 +709,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/Zzhanp.github.io/tags/ctf/">
-                                    <span class="chip bg-color">ctf</span>
-                                </a>
-                            
-                                <a href="/Zzhanp.github.io/tags/misc/">
-                                    <span class="chip bg-color">misc</span>
-                                </a>
-                            
-                                <a href="/Zzhanp.github.io/tags/信安实验室/">
-                                    <span class="chip bg-color">信安实验室</span>
+                                <a href="/Zzhanp.github.io/tags/计算机网络/">
+                                    <span class="chip bg-color">计算机网络</span>
                                 </a>
                             
                         </div>
@@ -747,30 +880,84 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
-                <a href="/Zzhanp.github.io/2021/03/02/PHP/">
+                <a href="/Zzhanp.github.io/2021/11/03/计算机网络体系结构/">
                     <div class="card-image">
                         
                         
-                        <img src="/Zzhanp.github.io/medias/featureimages/16.jpg" class="responsive-img" alt="PHP">
+                        <img src="/Zzhanp.github.io/medias/featureimages/0.jpg" class="responsive-img" alt="计算机网络体系结构">
                         
-                        <span class="card-title">PHP</span>
+                        <span class="card-title">计算机网络体系结构</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            PHP学习PHP基础搭建环境静态网站访问流程：
-本地DNS和网络DNS，先经过本地DNS寻找，再去网络DNS寻找。
-/index.heml：URI（Identifier）统一资源标识，目标机器上相对某个文件夹的相对路径。
-Apache根据U
+                            计算机网络体系结构因特网概述网络由若干结点和连接这些结点的链路组成。
+internet（互联网或互联网）：通用名词，泛指由多个计算机网络互连而成的网络。在这些网络之间的通信协议可以是任意的。
+Internet（专有名词）：指全球最大的、开放
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-03-02
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-03
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/Zzhanp.github.io/categories/学习笔记/" class="post-category">
+                                    学习笔记
+                                </a>
+                            
+                            
                         </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/Zzhanp.github.io/tags/计算机网络/">
+                        <span class="chip bg-color">计算机网络</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/Zzhanp.github.io/2021/03/25/sql注入/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/Zzhanp.github.io/medias/featureimages/3.jpg" class="responsive-img" alt="sql注入">
+                        
+                        <span class="card-title">sql注入</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            sql注入学习接触安全这么久了，却连最基本的注入都还不会。。。令人汗颜。从这个笔记开始，好好学习注入，好好学习安全！本文借助sqli-labs来进行训练。
+联合查询注入过程1、判断注入点
+2、判断是整型还是字符型
+3、判断查询列数
+4、判断
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-25
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -786,71 +973,16 @@ Apache根据U
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/Zzhanp.github.io/tags/PHP/">
-                        <span class="chip bg-color">PHP</span>
+                    <a href="/Zzhanp.github.io/tags/Web安全/">
+                        <span class="chip bg-color">Web安全</span>
                     </a>
                     
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                Next&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/Zzhanp.github.io/2020/05/10/bugku-web-wp/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/Zzhanp.github.io/medias/featureimages/15.jpg" class="responsive-img" alt="bugku-web-wp">
-                        
-                        <span class="card-title">bugku-web-wp</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            bugku-web最近学校的ctf比赛开始了，但是尝试了一下，几乎一道都做不出来。。。
-唉。。还是稳扎稳打，一步一步来吧
-web2F12查看源代码
-
-计算器这道题是让你输个验证码，但是输的时候发现只能输一位数字。
-F12，修改验证框的大小
-
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-10
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/Zzhanp.github.io/categories/ctf/" class="post-category">
-                                    ctf
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/Zzhanp.github.io/tags/ctf/">
-                        <span class="chip bg-color">ctf</span>
+                    <a href="/Zzhanp.github.io/tags/sql注入/">
+                        <span class="chip bg-color">sql注入</span>
                     </a>
                     
-                    <a href="/Zzhanp.github.io/tags/bugku/">
-                        <span class="chip bg-color">bugku</span>
-                    </a>
-                    
-                    <a href="/Zzhanp.github.io/tags/web/">
-                        <span class="chip bg-color">web</span>
+                    <a href="/Zzhanp.github.io/tags/sql/">
+                        <span class="chip bg-color">sql</span>
                     </a>
                     
                 </div>

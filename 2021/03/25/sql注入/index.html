@@ -455,8 +455,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/Zzhanp.github.io/categories/学习记录/" class="post-category">
-                                学习记录
+                            <a href="/Zzhanp.github.io/categories/学习笔记/" class="post-category">
+                                学习笔记
                             </a>
                         
                     </div>
@@ -499,7 +499,19 @@
 <p>?id=1’)#</p>
 <p>?id=1’))#</p>
 <h3 id="判断注入点"><a href="#判断注入点" class="headerlink" title="判断注入点"></a>判断注入点</h3><p><strong>当输入的参数为字符串时，并且存在注入，可称为字符型注入，字符型和数值型的区别在于数值不需要单引号闭合，而字符型都需要单引号闭合。</strong></p>
-<h3 id="判断整型还是字符型"><a href="#判断整型还是字符型" class="headerlink" title="判断整型还是字符型"></a>判断整型还是字符型</h3><h3 id="判断列数"><a href="#判断列数" class="headerlink" title="判断列数"></a>判断列数</h3><p>order by 函数是对MySQL中查询结果按照指定字段名进行排序，除了指定字 段名还可以指定字段的栏位进行排序，第一个查询字段为1，第二个为2，依次 类推。我们可以通过二分法来猜解列数。</p>
+<h3 id="判断整型还是字符型"><a href="#判断整型还是字符型" class="headerlink" title="判断整型还是字符型"></a>判断整型还是字符型</h3><p>数字型通常sql语句为：</p>
+<p><code>select * from users where id =x</code></p>
+<p>这种类型可以使用经典的and 1=1 and 1=2来判断</p>
+<p>url地址中输入<code>www.xxxx.com/ccc.php?id=x and 1=1</code><br> 页面显示正常，继续下一步</p>
+<p>url地址中输入<code>www.xxxx.com/ccc.php?id=x and 1=2</code><br> 页面错误，这说明存在数字型注入。</p>
+<p>原因如下：<br> 当输入and 1=1时，后台会执行sql语句是：</p>
+<p><code>select * from users where id =x and 1=1；</code></p>
+<p>没有语法显示错误且，返回正常</p>
+<p>当输入and 1=2时，后台会执行sql语句是：</p>
+<p><code>select * from users where id =1 and 1=2;</code></p>
+<p>也可以用id=2-1来判断</p>
+<p>字符型：</p>
+<h3 id="判断列数"><a href="#判断列数" class="headerlink" title="判断列数"></a>判断列数</h3><p>order by 函数是对MySQL中查询结果按照指定字段名进行排序，除了指定字 段名还可以指定字段的栏位进行排序，第一个查询字段为1，第二个为2，依次 类推。我们可以通过二分法来猜解列数。</p>
 <p>输入 order by 4发现页面错误，说明没有4列。</p>
 <p><code>http://127.0.0.1/sql/Less-1/?id=1&#39; order by 3 --+</code></p>
 <h3 id="判断显示位"><a href="#判断显示位" class="headerlink" title="判断显示位"></a>判断显示位</h3><h4 id="显示位"><a href="#显示位" class="headerlink" title="显示位"></a>显示位</h4><p>我们在进行手工SQL注入的时候会用到ORDER BY 查询列数，然后通过UNION SELECT爆出在网页中的显示位。这个显示位指的是网页中能够显示数据的位置。举例来说，比如我们通过ORDER BY命令知道了表的列数为11。然后再使用UNION SELECT 1,2,3…,11 from table，网页中显示了信息8，那么说明网页只能够显示第8列中信息，不能显示其他列的信息。也可以理解为网页只开放了8这个窗口，你想要查询数据库信息就必须要通过这个窗口。所以如果我们想要知道某个属性的值，比如admin,就要把admin属性放到8的位置上，这样就能通过第8列爆出admin的信息。</p>
@@ -793,8 +805,8 @@
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/Zzhanp.github.io/categories/学习记录/" class="post-category">
-                                    学习记录
+                            <a href="/Zzhanp.github.io/categories/学习笔记/" class="post-category">
+                                    学习笔记
                                 </a>
                             
                             

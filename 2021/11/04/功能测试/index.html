@@ -4,7 +4,7 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="计算机网络体系结构, 清风堂">
+    <meta name="keywords" content="功能测试, 清风堂">
     <meta name="description" content="学习-感悟-生活">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>计算机网络体系结构 | 清风堂</title>
+    <title>功能测试 | 清风堂</title>
     <link rel="icon" type="image/png" href="/Zzhanp.github.io/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/Zzhanp.github.io/libs/awesome/css/all.css">
@@ -310,7 +310,7 @@
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">计算机网络体系结构</h1>
+                    <h1 class="description center-align post-title">功能测试</h1>
                 </div>
             </div>
         </div>
@@ -435,8 +435,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/Zzhanp.github.io/tags/计算机网络/">
-                                <span class="chip bg-color">计算机网络</span>
+                            <a href="/Zzhanp.github.io/tags/功能测试/">
+                                <span class="chip bg-color">功能测试</span>
+                            </a>
+                        
+                            <a href="/Zzhanp.github.io/tags/测试理论/">
+                                <span class="chip bg-color">测试理论</span>
                             </a>
                         
                     </div>
@@ -451,8 +455,8 @@
                                 学习笔记
                             </a>
                         
-                            <a href="/Zzhanp.github.io/categories/学习笔记/计算机网络/" class="post-category">
-                                计算机网络
+                            <a href="/Zzhanp.github.io/categories/学习笔记/测试/" class="post-category">
+                                测试
                             </a>
                         
                     </div>
@@ -464,7 +468,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2021-11-03
+                    2021-11-04
                 </div>
                 
 
@@ -480,176 +484,370 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="计算机网络体系结构"><a href="#计算机网络体系结构" class="headerlink" title="计算机网络体系结构"></a>计算机网络体系结构</h1><h2 id="因特网概述"><a href="#因特网概述" class="headerlink" title="因特网概述"></a>因特网概述</h2><p>网络由若干结点和连接这些结点的链路组成。</p>
-<p>internet（互联网或互联网）：通用名词，泛指由多个计算机网络互连而成的网络。在这些网络之间的通信协议可以是任意的。</p>
-<p>Internet（专有名词）：指全球最大的、开放的、由众多网络相互连接而成的特定计算机网络，采用TCP/IP协议作为通信的规则，前身是美国的ARPANET。</p>
-<h3 id="因特网发展的三个阶段"><a href="#因特网发展的三个阶段" class="headerlink" title="因特网发展的三个阶段"></a>因特网发展的三个阶段</h3><p> 单个网络ARPANET向互联网发展-&gt;逐步建成三级结构的因特网-&gt;逐步形成了多层次ISP结构的因特网</p>
-<p>1969年，第一个分组交换网ARPANET。</p>
-<h3 id="ISP"><a href="#ISP" class="headerlink" title="ISP"></a>ISP</h3><p>个人通过ISP接入到因特网</p>
-<p>主干ISP：因特网主干网，直接互联</p>
-<p>地区ISP：区域性或国家性覆盖规模</p>
-<p>本地ISP：校园网、企业网、移动用户</p>
-<p>相隔较远的两台主机通信：主机A-&gt;本地ISP-&gt;地区ISP-&gt; 主干ISP-&gt; 地区ISP-&gt;本地ISP-&gt;主机B</p>
-<h3 id="因特网标准化工作"><a href="#因特网标准化工作" class="headerlink" title="因特网标准化工作"></a>因特网标准化工作</h3><p>RFC</p>
-<h3 id="因特网的组成"><a href="#因特网的组成" class="headerlink" title="因特网的组成"></a>因特网的组成</h3><p>边缘部分：由所有连接在因特网上的<strong>主机</strong>组成。用户直接使用，用来<strong>通信（传送数据、音频或视频）和资源共享</strong>。</p>
-<p>核心部分：由<strong>大量网络</strong>和连接这些网络的<strong>路由器</strong>组成。为边缘部分提供服务（提供连通性和交换）。</p>
-<h2 id="三种交换方式"><a href="#三种交换方式" class="headerlink" title="三种交换方式"></a>三种交换方式</h2><h3 id="电路交换"><a href="#电路交换" class="headerlink" title="电路交换"></a>电路交换</h3><p>前提：所有电话机两两相连接不现实。</p>
-<p>定义：电话交换机接通电话线的方式。</p>
-<p>步骤：</p>
-<ol>
-<li>建立连接（分配通信资源）</li>
-<li>通话（一直占用通信资源）</li>
-<li>释放连接（归还通信资源）</li>
+                <h1 id="功能测试"><a href="#功能测试" class="headerlink" title="功能测试"></a>功能测试</h1><h2 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h2><h3 id="按是否覆盖源代码"><a href="#按是否覆盖源代码" class="headerlink" title="按是否覆盖源代码"></a>按是否覆盖源代码</h3><p>黑盒：不关注代码逻辑，只关注输入输出。</p>
+<p>白盒：关注代码逻辑。</p>
+<p>灰盒测试：多用于集成测试阶段。</p>
+<h3 id="按测试阶段"><a href="#按测试阶段" class="headerlink" title="按测试阶段"></a>按测试阶段</h3><p>单元测试：单个功能模块，对软件中最小可测单元进行检查和验证</p>
+<p>集成测试：组装测试，组装成完整功能，将所有程序模块进行有序的、递增的测试，重点测试不同模块的接口部分。</p>
+<p>系统测试：将整个软件系统看成一个整体进行测试，依据是软件需求说明书，软硬件</p>
+<p>验收测试：检验软件是否符合用户需求的测试：α：内测 β：公测 γ：候选发布版本</p>
+<h3 id="按是否运行"><a href="#按是否运行" class="headerlink" title="按是否运行"></a>按是否运行</h3><p>静态：不运行，界面或文档可能存在</p>
+<p>动态：实际运行被测程序</p>
+<h3 id="按是否自动化"><a href="#按是否自动化" class="headerlink" title="按是否自动化"></a>按是否自动化</h3><p>手工测试</p>
+<p>自动化测试</p>
+<h3 id="更多"><a href="#更多" class="headerlink" title="更多"></a>更多</h3><p>冒烟测试：针对最基本功能，保证基本的功能和流程能走通。</p>
+<p>回归测试：修复一个bug后，把之前的测试用例在新的代码下再次测试。</p>
+<p>随机测试：每个人不同的经验、角度。</p>
+<p>探索测试：</p>
+<h2 id="软件测试模型"><a href="#软件测试模型" class="headerlink" title="软件测试模型"></a>软件测试模型</h2><h3 id="瀑布模型"><a href="#瀑布模型" class="headerlink" title="瀑布模型"></a>瀑布模型</h3><p>职责明确，不响应需求的变化。应用于大型项目。</p>
+<p>可研与计划－需求分析－概要设计－详细设计－编码－软件测试－运行维护</p>
+<p>可研与计划：可行性研究报告</p>
+<p>需求分析：需求规格说明书</p>
+<p>概要设计：概要设计文档（架构师）</p>
+<p>详细设计：详细设计文档（开发）</p>
+<p>编码：敲代码</p>
+<p>软件测试：测试报告</p>
+<h3 id="V模型"><a href="#V模型" class="headerlink" title="V模型"></a>V模型</h3><p>需求分析-概要设计-详细设计-编码-单元测试-集成测试-系统测试-验收测试</p>
+<p>测试的活动更多，并没有解决瀑布模型不响应需求变化的缺点。</p>
+<h3 id="W模型"><a href="#W模型" class="headerlink" title="W模型"></a>W模型</h3><ul>
+<li>开发V：需求分析-概要设计-详细设计-编码-<strong>集成-实施-交付</strong></li>
+<li>缺点：技术和管理要求比较高</li>
+<li>测试V：验收系统测试设计-集成测试设计-单元测试设计-单元测试-集成测试-系统测试-验收测试</li>
+<li>测试参与了软件开发全生命周期</li>
+</ul>
+<h2 id="软件质量模型"><a href="#软件质量模型" class="headerlink" title="软件质量模型"></a>软件质量模型</h2><p>功能性：检察业务功能是否满足需求</p>
+<p>可靠性：容错性能、纠错能力</p>
+<p>易用性：易读易懂</p>
+<p>效率：性能（响应时间、消耗的资源）</p>
+<p>可维护性：为后续功能的开发与维护提供便利</p>
+<p>可移植性：不同的软件环境和硬件环境</p>
+<h2 id="测试用例"><a href="#测试用例" class="headerlink" title="测试用例"></a>测试用例</h2><h3 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h3><p>一个为了特定目的（验证产品的功能实现是否满足用户需求）而设计的的包含（测试输入、执行条件、预期结果）的文档。</p>
+<h3 id="好处"><a href="#好处" class="headerlink" title="好处"></a>好处</h3><ul>
+<li>便于理清测试思路，确保需覆盖测试的功能点无遗漏。</li>
+<li>便于测试工作量的评估</li>
+<li>便于提前准备测试数据</li>
+<li>便于把控测试工作进度</li>
+<li>便于回归测试</li>
+<li>便于测试工作的组织，提高测试效率，降低测试交接成本</li>
+</ul>
+<h3 id="组成要素"><a href="#组成要素" class="headerlink" title="组成要素"></a>组成要素</h3><ul>
+<li>用例编号</li>
+<li>用例标题</li>
+<li>测试项目</li>
+<li>用例级别</li>
+<li>预置条件</li>
+<li>测试输入</li>
+<li>执行步骤</li>
+<li>预期结果</li>
+</ul>
+<h2 id="等价类划分法"><a href="#等价类划分法" class="headerlink" title="等价类划分法"></a>等价类划分法</h2><h3 id="概念-1"><a href="#概念-1" class="headerlink" title="概念"></a>概念</h3><p>在所有测试数据中，具有某种共同特征的数据子集。</p>
+<h3 id="划分"><a href="#划分" class="headerlink" title="划分"></a>划分</h3><p>满足要求：有效等价类</p>
+<p>不满足要求：无效等价类</p>
+<h3 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h3><p><strong>有大量数据测试输入，但是没法穷举测试。</strong>如输入框、下拉列表、单选复选框，需要同时提交，对于每种输入都需要大量测试输入验证</p>
+<p>典型代表：<strong>页面级的输入框类测试</strong></p>
+<h3 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h3><ol>
+<li><p><strong>需求分析</strong></p>
+</li>
+<li><p><strong>划分等价类：</strong></p>
+<ul>
+<li><p>有效：满足所有需求</p>
+</li>
+<li><p>无效：<strong>规则（需求）、长度、类型、是否为空（必填项）、是否重复</strong>。只要一项不满足即可。</p>
+</li>
+</ul>
+</li>
+<li><p><strong>设计测试用例</strong></p>
+</li>
 </ol>
-<p>电路交换传送计算机数据时，线路传输效率低</p>
-<h3 id="分组交换（重点）"><a href="#分组交换（重点）" class="headerlink" title="分组交换（重点）"></a>分组交换（重点）</h3><p>发送方：构造分组、发送分组</p>
-<p>路由器：存储转发</p>
-<p>接收方：接收分组、还原报文</p>
-<h3 id="报文交换"><a href="#报文交换" class="headerlink" title="报文交换"></a>报文交换</h3><p>对报文大小无限制，交换结点需要有较大缓存空间，用于早期电报。</p>
-<h3 id="对比"><a href="#对比" class="headerlink" title="对比"></a>对比</h3><p>分组交换：随时发送分组，不需要事先建立连接。分组在交换机进行存储转发，减少了转发时延，避免过长的报文长时间占用链路，同时有利于进行差错控制。</p>
-<p>电路交换：比特流直达终点。</p>
-<p>报文交换：报文需要在各节点交换机进行存储转发。</p>
-<h4 id="电路交换优点"><a href="#电路交换优点" class="headerlink" title="电路交换优点"></a>电路交换优点</h4><ul>
-<li>数据直达，通信时延小</li>
-<li>有序传输</li>
-<li>没有冲突</li>
-<li>适用范围广（既适用于传输数字信号，也可模拟信号）</li>
-<li>实时性强</li>
-<li>控制简单</li>
-</ul>
-<h4 id="电路交换缺点"><a href="#电路交换缺点" class="headerlink" title="电路交换缺点"></a>电路交换缺点</h4><ul>
-<li>建立连接时间长</li>
-<li>线路独占，使用效率低</li>
-<li>灵活性差，任何一点出现故障，需要重新连接</li>
-<li>难以规格化</li>
-</ul>
-<h4 id="报文交换优点"><a href="#报文交换优点" class="headerlink" title="报文交换优点"></a>报文交换优点</h4><ul>
-<li>无需建立连接</li>
-<li>动态分配线路</li>
-<li>提高线路可靠性，某条路故障，选择另一条路</li>
-<li>提高线路利用率</li>
-<li>提供多目标服务，同时发给多个目标地址</li>
-</ul>
-<h4 id="报文交换缺点"><a href="#报文交换缺点" class="headerlink" title="报文交换缺点"></a>报文交换缺点</h4><ul>
-<li>引起了转发时延</li>
-<li>需要较大存储缓存空间</li>
-<li>需要传输额外信息量</li>
-</ul>
-<h4 id="分组交换优点"><a href="#分组交换优点" class="headerlink" title="分组交换优点"></a>分组交换优点</h4><ul>
-<li>无需建立连接</li>
-<li>线路利用率高</li>
-<li>简化了存储管理</li>
-<li>加速传输，后一个的存储和前一个的转发可以同时进行</li>
-<li>减少出错概率和重发数据量</li>
-</ul>
-<h4 id="分组交换缺点"><a href="#分组交换缺点" class="headerlink" title="分组交换缺点"></a>分组交换缺点</h4><ul>
-<li>引起了转发时延</li>
-<li>需要传输额外的信息量</li>
-<li>对于数据报服务，存在丢序、丢失或重复分组的问题；对于虚电路服务，存在呼叫建立、数据传输和虚电路释放三个过程</li>
-</ul>
-<h2 id="计算机网络的定义和分类"><a href="#计算机网络的定义和分类" class="headerlink" title="计算机网络的定义和分类"></a>计算机网络的定义和分类</h2><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><p>一些互相连接的、自治的计算机的集合</p>
-<p>自治：独立的计算机，有自己的硬件和软件，可以单独运行使用。</p>
-<p>计算机网络并非专门用来传输数据，而是能够支持很多种应用。</p>
-<h3 id="分类（重点）"><a href="#分类（重点）" class="headerlink" title="分类（重点）"></a>分类（重点）</h3><h4 id="按交换技术"><a href="#按交换技术" class="headerlink" title="按交换技术"></a>按交换技术</h4><p>电路交换网络、报文交换网络、分组交换网络</p>
-<h4 id="按使用者"><a href="#按使用者" class="headerlink" title="按使用者"></a>按使用者</h4><p>公用网、专用网</p>
-<h4 id="按传输介质"><a href="#按传输介质" class="headerlink" title="按传输介质"></a>按传输介质</h4><p>有线网络、无线网络</p>
-<h4 id="按覆盖范围"><a href="#按覆盖范围" class="headerlink" title="按覆盖范围"></a>按覆盖范围</h4><p><strong>广域网WAN</strong>：几十公里到几千公里，远程网。</p>
-<p>城域网MAN：范围一个城市。</p>
-<p><strong>局域网LAN</strong>：微型计算机或工作站通过高速通信线路相连（10Mb/s以上），校园网、企业网。</p>
-<p><strong>个域网PAN</strong>：10米，个人设备用无线技术连起来的网络，无线个人区域网WPAN。</p>
-<h4 id="按拓扑结构"><a href="#按拓扑结构" class="headerlink" title="按拓扑结构"></a>按拓扑结构</h4><p>总线型：</p>
-<p>星型：成本高，中央设备对故障敏感</p>
-<p>环型：单向传输</p>
-<p>网状型：可靠性高，线路复杂、成本高</p>
-<h2 id="计算机网络的性能指标"><a href="#计算机网络的性能指标" class="headerlink" title="计算机网络的性能指标"></a>计算机网络的性能指标</h2><h3 id="速率"><a href="#速率" class="headerlink" title="速率"></a>速率</h3><p>连接在计算机网络上的主机在数字信道上传送比特的速率，也称为<strong>比特率或数据率</strong>。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">比特，数据量的单位，1 Byte = 8 bit</span><br><span class="line">常用数据率单位：</span><br><span class="line">bit/s(b/s,bps)</span><br></pre></td></tr></table></figure>
-<h3 id="带宽（重点）"><a href="#带宽（重点）" class="headerlink" title="带宽（重点）"></a>带宽（重点）</h3><p>表示网络的通信线路所能传送数据的能力，网络带宽表示在单位时间内从网络的某一点到另一点所能通过的<strong>“最高数据率”</strong>。单位b/s，如家里的网为200M，即200Mb/s。</p>
-<h3 id="吞吐量"><a href="#吞吐量" class="headerlink" title="吞吐量"></a>吞吐量</h3><p>表示在<strong>单位时间内通过某个网络（或信道、接口）的数据量。受网络的带宽或额定速率的限制。</strong></p>
-<h3 id="时延（重点）"><a href="#时延（重点）" class="headerlink" title="时延（重点）"></a>时延（重点）</h3><p>发送时延：源主机将分组发往传输线路，分组长度(b)/发送速率(b/s)，发送速率由网卡的发送速率、信道带宽、交换机的接口速率决定。</p>
-<p>传播时延：电信号在链路传输，信道长度(m)/电磁波传播速率(m/s)，电磁波在铜线传播约为2.3x10^8 m/s，光纤约为2.0x10^8 m/s。</p>
-<p>处理时延：路由器收到分组后对其进行存储转发。</p>
-<h3 id="时延带宽积"><a href="#时延带宽积" class="headerlink" title="时延带宽积"></a>时延带宽积</h3><p><strong>指传播时延x带宽</strong>，以比特为单位的链路长度。</p>
-<h3 id="往返时间"><a href="#往返时间" class="headerlink" title="往返时间"></a>往返时间</h3><p>RTT：卫星网络耗时较多</p>
-<h3 id="利用率（重点）"><a href="#利用率（重点）" class="headerlink" title="利用率（重点）"></a>利用率（重点）</h3><p>信道利用率：表示某信道有百分之几的时间是被利用的（有数据通过），并非越高越好。</p>
-<p>网络利用率：全网络的信道利用率的加权平均</p>
-<p>当网络的利用率达到50%时，时延就要加倍。D=D0/(1-U).</p>
-<p>也不能使利用率太低，白白浪费通信资源。动态调整。</p>
-<h3 id="丢包率"><a href="#丢包率" class="headerlink" title="丢包率"></a>丢包率</h3><p>分组丢失率，<strong>丢失的分组数量与总分组数量的比率</strong>。</p>
-<p>分组在传输过程中出现<strong>误码</strong>，被结点丢弃。</p>
-<p>分组到达一台队列已满的分组交换机时被丢弃，在数据量较大时可能造成<strong>网络拥塞</strong>。</p>
-<p>反映了网络的拥塞情况。</p>
-<h2 id="计算机网络体系结构（重点）"><a href="#计算机网络体系结构（重点）" class="headerlink" title="计算机网络体系结构（重点）"></a>计算机网络体系结构（重点）</h2><h3 id="常见的计算机网络体系结构"><a href="#常见的计算机网络体系结构" class="headerlink" title="常见的计算机网络体系结构"></a>常见的计算机网络体系结构</h3><h4 id="OSI体系结构"><a href="#OSI体系结构" class="headerlink" title="OSI体系结构"></a>OSI体系结构</h4><p>法律上的国际标准</p>
+<h3 id="实战"><a href="#实战" class="headerlink" title="实战"></a>实战</h3><p>一、QQ账号：</p>
+<p>需求分析：6-10位自然数</p>
+<p>长度：6-10位</p>
+<p>类型：自然数</p>
+<p><strong>划分等价类：</strong></p>
+<p>有效等价类：6-10位自然数，有效数据：123456</p>
+<p>无效等价类：</p>
+<p>长度：小于5位、大于10位</p>
+<p>类型：非自然数，包含字母、符号、中文、空格，空</p>
+<p>二、电话号码：</p>
+<p><strong>需求分析：</strong>验证某城市电话号码正确性</p>
+<p>区号：空或三位数字</p>
+<p>前缀码：非0且非1开头的三位数字</p>
+<p>后缀码：四位数字</p>
+<p><strong>有效等价类：</strong></p>
+<p><strong>无效等价类：</strong></p>
+<p>三、新浪邮箱登录</p>
+<p><strong>需求分析：</strong></p>
+<p>测试目的：邮箱能否登录</p>
+<p>测试条件：</p>
+<p>邮箱名：4-16位字符，支持英文、数字、下划线（不能全是数字或者下划线）</p>
+<p>密码：6-18位字符</p>
+<p><strong>有效等价类：</strong></p>
+<p><strong>无效等价类：</strong></p>
+<p>挑一个最小的一个最大的</p>
+<h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><p>单模块测试中，用例标题具有唯一性。</p>
+<p>必要步骤尽可能清楚。</p>
+<h2 id="边界值分析法"><a href="#边界值分析法" class="headerlink" title="边界值分析法"></a>边界值分析法</h2><h3 id="场景"><a href="#场景" class="headerlink" title="场景"></a>场景</h3><p>开发人员常常在边界的位置容易出现问题，因此需要针对边界位置再测试。</p>
+<p>对于等价类划分法的完善和补充。</p>
+<p><strong>针对有边界范围的批量数据的输入类测试（重点关注边界）</strong></p>
+<p><strong>典型代表：输入框（有边界范围区间）</strong></p>
+<h3 id="边界范围确定"><a href="#边界范围确定" class="headerlink" title="边界范围确定"></a>边界范围确定</h3><p>选取正好等于、刚好大于、刚好小于边界的值作为测试数据。</p>
 <ul>
-<li>应用层</li>
-<li>表示层</li>
-<li>会话层</li>
-<li>运输层</li>
-<li>网络层</li>
-<li>数据链路层</li>
-<li>物理层</li>
+<li>上点：边界上的点（正好等于）</li>
+<li>离点：距离上点最近的点（刚好大于、刚好小于）</li>
+<li>内点：范围内的点（区间范围内的点）</li>
 </ul>
-<p>失败原因：</p>
-<p>1、OSI专家缺乏实际经验，OSI标准没有商业驱动力</p>
-<p>2、OSI协议实现起来很复杂，且效率低</p>
-<p>3、OSI标准制定周期太长，按OSI标准生产的设备无法及时进入市场</p>
-<p>4、OSI层次划分不太合理，有些功能在多个层次重复出现</p>
-<h4 id="TCP-IP体系结构"><a href="#TCP-IP体系结构" class="headerlink" title="TCP/IP体系结构"></a>TCP/IP体系结构</h4><p>事实上的国际标准</p>
+<h3 id="步骤-1"><a href="#步骤-1" class="headerlink" title="步骤"></a>步骤</h3><p>明确需求：测试目的、测试条件</p>
+<p>划分等价类：有效等价类、无效等价类</p>
+<p>确认边界范围值：上点、离点（可以优化）、内点（可以和有效等价类的取值合并）</p>
+<p>提取数据编写用例：</p>
+<p><strong>上点需要单独列出。</strong></p>
+<h3 id="边界取值优化"><a href="#边界取值优化" class="headerlink" title="边界取值优化"></a>边界取值优化</h3><p>内点：必选（建议选择中间范围）</p>
+<p>上点：必须选</p>
+<p>离点：可以优化，取和上点取值相反的取值点即可（上点有效，离点选无效 ）</p>
+<h3 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h3><p>一、QQ</p>
+<p>上点：6 位、10位</p>
+<p>离点：5位、11位</p>
+<p>内点：8位</p>
+<p>二、标题长度</p>
+<p>标题长度大于0，小于等于30个字符。</p>
+<p>边界值：</p>
+<p>上点：0个、30个</p>
+<p>离点：1个，31个</p>
+<p>内点：15个</p>
+<p>三、邮箱登录</p>
+<p>邮箱名边界值：</p>
+<p>上点：4，16</p>
+<p>离点：3，17</p>
+<p>内点：10</p>
+<p>密码边界值：</p>
+<p>上点：6，18</p>
+<p>离点：5，19</p>
+<p>内点：12</p>
+<h2 id="判定表法"><a href="#判定表法" class="headerlink" title="判定表法"></a>判定表法</h2><h3 id="案例-1"><a href="#案例-1" class="headerlink" title="案例"></a>案例</h3><p>若用户欠费或者关机，则不允许主被叫</p>
+<h3 id="适用场景"><a href="#适用场景" class="headerlink" title="适用场景"></a>适用场景</h3><p>有多个输入条件，多个输出结果，输入条件之间有组合关系，输入条件和输出结果之间有依赖（制约）关系。</p>
+<p><strong>常见词汇：如果…那么…</strong></p>
+<p>局限性：判定表一般适用于条件组合数量较少的情况。</p>
+<h3 id="判定表构成"><a href="#判定表构成" class="headerlink" title="判定表构成"></a>判定表构成</h3><p>条件桩：列出问题中所有条件。</p>
+<p>动作桩：列出问题中可能采取的操作。</p>
+<p>条件项：列出条件的对应取值。</p>
+<p>动作项：列出条件项的各种取值情况下应该采取的动作结果。</p>
+<p><strong>规则：判定表中贯穿条件项和动作项的一列就是一条规则。</strong></p>
+<h3 id="步骤-2"><a href="#步骤-2" class="headerlink" title="步骤"></a>步骤</h3><p>明确需求</p>
+<p>画出判定表：</p>
 <ul>
-<li>应用层：HTTP、SMTP、DNS、RTP</li>
-<li>运输层：TCP、UDP</li>
-<li>网际层：IP</li>
-<li>网络接口层</li>
+<li>列出条件桩和动作桩</li>
+<li>填写条件项，对条件进行全组合</li>
+<li>根据条件项的组合确定动作项</li>
+<li>简化、合并相似规则（有相同的动作）</li>
 </ul>
-<p>合并OSI物理层和数据链路层为网咯接口层，去掉了OSI的会话层和表示层。</p>
-<p>路由器一般只包含网络接口层和网际层。</p>
-<p>网络接口层并没有规定具体内容，因此TCP/IP只有上面三层。</p>
-<p>使用IP协议互联不同的网络接口（IP over everything），同时可以为各种网络应用提供服务（everything over IP）。</p>
-<h4 id="五层协议体系结构"><a href="#五层协议体系结构" class="headerlink" title="五层协议体系结构"></a>五层协议体系结构</h4><ul>
-<li>应用层</li>
-<li>运输层</li>
-<li>网络层</li>
-<li>数据链路层</li>
-<li>物理层</li>
-</ul>
-<h3 id="分层的必要性"><a href="#分层的必要性" class="headerlink" title="分层的必要性"></a>分层的必要性</h3><p>计算机网络是个非常复杂的系统</p>
-<p>分层可将庞大而复杂的问题，转化为若干较小的局部问题。</p>
-<p>物理层：解决使用何种信号来传输比特的问题</p>
-<p>数据链路层：解决分组在一个网络（或一段链路）上传输的问题</p>
-<p>网络层：解决分组在多个网络上传输（路由）的问题</p>
-<p>运输层：解决进程之间基于网络的通信问题</p>
-<p>应用层：解决通过应用进程的交互来实现特定网络应用的问题</p>
-<h3 id="专用术语"><a href="#专用术语" class="headerlink" title="专用术语"></a>专用术语</h3><p>实体：任何可发送或接收信息的硬件或软件进程。</p>
-<p>协议：控制两个对等实体进行<strong>逻辑通信</strong>的规则的集合。</p>
-<p>协议的三要素：</p>
-<p>语法：定义所交换信息的格式</p>
-<p>语义：定义收发双方所要完成的操作</p>
-<p>同步：定义收发双方的时序关系</p>
-<p>在协议的控制下，两个对等实体间的逻辑通信使得本层能够向上一层提供服务。</p>
-<p>要实现本层协议，还需要使用下面一层所提供的服务。</p>
-<p><strong>协议是水平的，服务是垂直的。</strong></p>
-<p>实体看得见相邻下层所提供的服务，但并不知道实现该服务的具体协议，下面的协议对上面的实体是<strong>“透明”</strong>的。</p>
-<p>协议数据单元PDU：<strong>对等层次之间传送的数据包</strong>称为该层的协议数据单元。</p>
-<p>服务数据单元SDU：<strong>同一系统内，层与层之间交换的数据包</strong>称为服务数据单元。</p>
-<h2 id="习题"><a href="#习题" class="headerlink" title="习题"></a>习题</h2><p>1、在OSI参考模型中，自下而上第一个提供端到端服务的层次是：传输层</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">传输层：解决进程之间基于网络的通信问题，提供端到端的逻辑通信</span><br><span class="line">传输层使用端口号为应用层的应用进程之间提供端到端的逻辑通信，而网络层仅仅为主机之间提供逻辑通信</span><br></pre></td></tr></table></figure>
-<p>2、TCP/IP参考模型的网络层提供的是：无连接不可靠的数据报服务</p>
-<p>3、在TCP/IP体系结构中，直接为ICMP提供服务的协议是：IP</p>
-<p>4、在OSI参考模型中，下列功能需由应用层的相邻层实现的是：数据格式转换</p>
-<p>5、时延：</p>
-<p><img src="https://zzhanp-1257986342.cos.ap-beijing.myqcloud.com/img/image-20211026202718538.png" alt="image-20211026202718538"></p>
-<p><img src="https://zzhanp-1257986342.cos.ap-beijing.myqcloud.com/img/image-20211026211812041.png" alt="image-20211026211812041" style="zoom:150%;"></p>
-<p><strong>n个发送时延+1个传播时延</strong></p>
-<p><img src="https://zzhanp-1257986342.cos.ap-beijing.myqcloud.com/img/image-20211026212155919.png" alt="image-20211026212155919"></p>
-<p><strong>n个分组，m段链路，总时延：</strong></p>
+<p>根据规则编写测试用例</p>
+<h3 id="案例-2"><a href="#案例-2" class="headerlink" title="案例"></a>案例</h3><p>一、订购单检查</p>
+<p><img src="https://zzhanp-1257986342.cos.ap-beijing.myqcloud.com/img/image-20211024000021774.png" alt="image-20211024000021774"></p>
+<p>二、文件修改</p>
+<p>如想对文件进行修改，需要遵守以下规则： 输入的第一列字符必须是A或B，第二列字符必须是一个数字， 如果第一列字符不正确，则给出信息L； 如果第二列字符不正确，则给出信息M。 如果两列字符输入正确，则修改文件成功， 如果两列字符都输入错误，则给出信息L、M。</p>
+<h2 id="因果图"><a href="#因果图" class="headerlink" title="因果图"></a>因果图</h2><h2 id="正交法"><a href="#正交法" class="headerlink" title="正交法"></a>正交法</h2><h2 id="场景法"><a href="#场景法" class="headerlink" title="场景法"></a>场景法</h2><p>也叫流程图法，是用流程图描述用户的使用场景，然后通过覆盖路程路径来设计测试用例。</p>
+<h3 id="意义"><a href="#意义" class="headerlink" title="意义"></a>意义</h3><p>用户使用角度：用户平时使用的不是单个功能，而是多个功能组合起来进行使用。</p>
+<p>测试人员角度：平时测试的都是单个功能点，容易忽略多个功能的组合测试。</p>
+<h3 id="适用场景-1"><a href="#适用场景-1" class="headerlink" title="适用场景"></a>适用场景</h3><p>根据实际的应用场景，对于多个功能之间的组合测试，可以使用场景法。</p>
+<p>一般在测试的后期，对整个系统的模块功能进行全部的<strong>组合测试</strong>。</p>
+<p>步骤：</p>
 <ul>
-<li><strong>n个分组的发送时延</strong></li>
-<li><strong>1个分组的发送时延 x (m-1)</strong></li>
-<li><strong>1段链路的传播时延 x m</strong></li>
+<li>需求分析</li>
+<li>绘制流程图</li>
+<li>设计测试用例</li>
 </ul>
-<p>6、</p>
-<p><img src="https://zzhanp-1257986342.cos.ap-beijing.myqcloud.com/img/image-20211026212517241.png" alt="image-20211026212517241"></p>
-<p>7、</p>
-<p><img src="https://zzhanp-1257986342.cos.ap-beijing.myqcloud.com/img/image-20211026214322285.png" alt="image-20211026214322285"></p>
+<h2 id="错误推测法"><a href="#错误推测法" class="headerlink" title="错误推测法"></a>错误推测法</h2><p>要求：有<strong>实际项目测试经验</strong>的人使用。</p>
+<p>定义：通过<strong>直觉（经验）</strong>或者智慧推测系统可能出现问题的地方进行再次测试。</p>
+<h3 id="适用场景-2"><a href="#适用场景-2" class="headerlink" title="适用场景"></a>适用场景</h3><p>1.时间紧迫：通过以往类似项目的经验，提取当前项目中核心模块（出现问题较多）进行再次测试。</p>
+<p>2.时间宽裕：在基础测试的基础上，将原有模块（存在问题较多）进行再次细化测试。</p>
+<h2 id="状态迁移法"><a href="#状态迁移法" class="headerlink" title="状态迁移法"></a>状态迁移法</h2><p>是一种基于产品规格分析，对系统的每个状态及与状态相关的功能进行测试，通过不同的状态验证程序的逻辑流程。</p>
+<p>适用场景：</p>
+<ul>
+<li>在业务流程中涉及到了复杂的业务场景（即业务状态的迁移）。</li>
+<li>这些业务场景在需求规格说明书中往往不能够完全阐述清楚，容易出现遗漏。</li>
+</ul>
+<h3 id="使用步骤"><a href="#使用步骤" class="headerlink" title="使用步骤"></a>使用步骤</h3><ol>
+<li>明确状态节点：分析被测试对象的需求规格说明，明确被测对象的状态节点数量。</li>
+<li>绘制状态迁移图：利用圆圈表示状态节点，有向箭头表示状态间的迁移关系。</li>
+<li>绘制状态迁移树：根据状态迁移图的节点和箭头绘制状态迁移树</li>
+<li>抽取测试路径设计用例：根据迁移树抽取测试路径，从左至右，横向抽取，每条路径构成一条测试规则。</li>
+</ol>
+<h3 id="案例分析1–飞机售票系统"><a href="#案例分析1–飞机售票系统" class="headerlink" title="案例分析1–飞机售票系统"></a>案例分析1–飞机售票系统</h3><p><img src="/Zzhanp.github.io//zzhanp.github.io/2021/11/04/功能测试/Users/lenovo/AppData/Roaming/Typora/typora-user-images/image-20211030161120223.png" alt="image-20211030161120223"></p>
+<ol>
+<li>明确状态节点：预定、已支付、已出票、已使用、已取消</li>
+<li>绘制状态迁移图</li>
+<li>绘制状态迁移树</li>
+<li>设计用例</li>
+</ol>
+<h3 id="案例分析2–下单流程"><a href="#案例分析2–下单流程" class="headerlink" title="案例分析2–下单流程"></a>案例分析2–下单流程</h3><p><img src="/Zzhanp.github.io//zzhanp.github.io/2021/11/04/功能测试/Users/lenovo/AppData/Roaming/Typora/typora-user-images/image-20211030210601131.png" alt="image-20211030210601131"></p>
+<p>状态节点：</p>
+<p>等待付款、待发货、待收货、待评价、已完成、已取消、已作废</p>
+<p>路径：</p>
+<p><img src="/Zzhanp.github.io//zzhanp.github.io/2021/11/04/功能测试/Users/lenovo/AppData/Roaming/Typora/typora-user-images/image-20211030211710878.png" alt="image-20211030211710878"></p>
+<h2 id="业务流程测试"><a href="#业务流程测试" class="headerlink" title="业务流程测试"></a>业务流程测试</h2><h3 id="流程图"><a href="#流程图" class="headerlink" title="流程图"></a>流程图</h3><ul>
+<li>椭圆：开始/结束</li>
+<li>箭头：路径、流程的走向</li>
+<li>平行四边形：数据的输入/输出</li>
+<li>矩形：处理/步骤/过程</li>
+<li>菱形：判断</li>
+</ul>
+<p>绘制原则：</p>
+<ul>
+<li>流程正确，不能遗漏路径</li>
+<li>先判定，再有判断结果</li>
+<li>主流程保持在流程图的中间位置，方便阅读</li>
+</ul>
+<h3 id="业务流程测试-1"><a href="#业务流程测试-1" class="headerlink" title="业务流程测试"></a>业务流程测试</h3><ul>
+<li>关注点在核心业务是否能够跑通</li>
+<li>重点不是关注单个功能模块的细节点</li>
+</ul>
+<p>测试时机：</p>
+<ul>
+<li>上线前进行业务流程测试的确认</li>
+<li>单功能模块基本可用的情况下，尽早进行（冒烟测试）</li>
+</ul>
+<h3 id="用例设计"><a href="#用例设计" class="headerlink" title="用例设计"></a>用例设计</h3><ul>
+<li>需求分析，明确流程</li>
+<li>画出流程图</li>
+<li>编写测试用例</li>
+</ul>
+<h3 id="案例1–TPshop业务流程"><a href="#案例1–TPshop业务流程" class="headerlink" title="案例1–TPshop业务流程"></a>案例1–TPshop业务流程</h3><h2 id="测试用例设计总结"><a href="#测试用例设计总结" class="headerlink" title="测试用例设计总结"></a>测试用例设计总结</h2><p>等价类：具有输入功能，但输入之间没有组合关系</p>
+<p>边界值：输入有边界，如长度、类型</p>
+<p>判定表、因果图：多输入、多输出、输入与输入之间存在组合关系、输入与输出之间存在依赖或制约关系</p>
+<p>正交法：用最少的测试用例获得最大测试覆盖率</p>
+<p>场景法、流程图：多个功能的组合测试</p>
+<p>错误推测法：最后使用来进一步补充测试用例</p>
+<h2 id="软件缺陷"><a href="#软件缺陷" class="headerlink" title="软件缺陷"></a>软件缺陷</h2><p>定义：软件在使用过程中存在的任何问题，都叫软件的缺陷，简称bug。（依据：需求说明书）</p>
+<h3 id="判定标准"><a href="#判定标准" class="headerlink" title="判定标准"></a>判定标准</h3><ul>
+<li><p>软件未实现需求说明书中明确要求的功能–中高级（没有做）</p>
+</li>
+<li><p>软件出现了需求说明书中指明不应该出现的错误–中高级（做错了）</p>
+</li>
+<li><p>软件实现的功能超出需求说明书指明的范围（做多了）</p>
+</li>
+<li><p>软件未实现需求说明书中虽未明确指明但应该实现的要求（没做好）</p>
+<!--一般指国际/国家/行业/企业标准规范或者法规的要求-->
+</li>
+<li><p>软件难以理解，不易使用，运行缓慢，用户体验不好。（不完美）（优先级较低）</p>
+</li>
+</ul>
+<h3 id="产生原因"><a href="#产生原因" class="headerlink" title="产生原因"></a>产生原因</h3><ul>
+<li>需求阶段：需求描述不易理解，有歧义、错误等。</li>
+<li>设计阶段：设计文档存在错误或者缺陷。</li>
+<li>编码阶段：代码出现错误。</li>
+<li>运行系统：软硬件系统本身故障导致软件缺陷。</li>
+</ul>
+<h3 id="软件缺陷核心内容"><a href="#软件缺陷核心内容" class="headerlink" title="软件缺陷核心内容"></a>软件缺陷核心内容</h3><ul>
+<li>缺陷的标题——描述缺陷的核心问题</li>
+<li>缺陷的预置条件——缺陷产生的前体</li>
+<li>缺陷的复现步骤——复现缺陷的过程</li>
+<li>缺陷的预期结果——希望得到的结果</li>
+<li>缺陷的实际结果——实际得到的结果</li>
+<li>缺陷的必要附件——图片、日志等信息</li>
+</ul>
+<h3 id="缺陷报告的其他要素"><a href="#缺陷报告的其他要素" class="headerlink" title="缺陷报告的其他要素"></a>缺陷报告的其他要素</h3><ul>
+<li>缺陷的编号”能够唯一的表示一个缺陷</li>
+<li>缺陷的状态：描述缺陷生命周期的过程<ul>
+<li><strong>新建（new）</strong></li>
+<li>打开（open）：表示开发确认通过</li>
+<li>拒绝（rejected）：表示开发确认不通过</li>
+<li>进行中（inprogress）：表示开发正在修复缺陷</li>
+<li><strong>已修复（fixed）</strong>：回归测试</li>
+<li>延迟修复（delay/postpone）</li>
+<li><strong>测试通过（closed）</strong></li>
+<li><strong>测试不通过（reopen/open）</strong></li>
+</ul>
+</li>
+<li>缺陷的所属模块：描述缺陷产生的模块范围</li>
+<li><strong>优先级：</strong>依据：1.测试用例优先级2.产品经理定的标准</li>
+<li><strong>严重级</strong></li>
+<li>缺陷的类型：<ul>
+<li>功能问题</li>
+<li>UI</li>
+<li>兼容性</li>
+<li>易用性</li>
+<li>架构</li>
+<li>安全性</li>
+</ul>
+</li>
+</ul>
+<h3 id="缺陷管理"><a href="#缺陷管理" class="headerlink" title="缺陷管理"></a>缺陷管理</h3><p>跟踪流程</p>
+<h4 id="编写缺陷报告规范"><a href="#编写缺陷报告规范" class="headerlink" title="编写缺陷报告规范"></a>编写缺陷报告规范</h4><ul>
+<li>可复现</li>
+<li>唯一性</li>
+<li>规范性：遵循公司规定的报bug的要求</li>
+</ul>
+<p>注意事项：</p>
+<ul>
+<li>确保上报的bug是准确的</li>
+<li>描述尽可能简洁易懂</li>
+<li>不能使用感情色彩的词语</li>
+<li>不能使用模棱两可的词汇</li>
+<li>不能使用人称代词</li>
+</ul>
+<h3 id="面试题"><a href="#面试题" class="headerlink" title="面试题"></a>面试题</h3><p>在实际测试中出现不可复现的bug怎么办？</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">1.经过多次复现后，还是没有出现，此时在本地记录当前问题</span><br><span class="line">2.回顾当时操作的流程及测试环境的配置要求，确认是否是由于操作失误或环境临时故障引起</span><br><span class="line">3.请开发协助查找当前测试模块是否有对应的日志信息</span><br><span class="line">4.考虑更换一套环境查看是否能够复现上述问题</span><br><span class="line">5.在后续版本测试中，需要关注当时测试该功能时是否还出现上述的问题</span><br><span class="line">6.在后续版本还出现过，需要开发协助打印日志进行分析定位，同时测试需要提交bug</span><br></pre></td></tr></table></figure>
+<h2 id="禅道"><a href="#禅道" class="headerlink" title="禅道"></a>禅道</h2><h3 id="使用流程"><a href="#使用流程" class="headerlink" title="使用流程"></a>使用流程</h3><p>管理用例</p>
+<ul>
+<li>创建用例：将需求文档直接转换为可测试的功能点的过程</li>
+<li>评审用例：查看已经编写好的用例是否有错误、遗漏、不正确的地方 进行评估的过程</li>
+<li>执行用例</li>
+</ul>
+<p>管理缺陷</p>
+<ul>
+<li>缺陷的创建</li>
+<li>缺陷的跟踪</li>
+<li>缺陷的验证</li>
+</ul>
+<h2 id="非功能测试"><a href="#非功能测试" class="headerlink" title="非功能测试"></a>非功能测试</h2><p>基本测试策略：</p>
+<ul>
+<li>冒烟测试：基本功能检查、核心业务流程测试</li>
+<li>单功能测试</li>
+<li>集成测试与回归</li>
+<li>系统测试与回归</li>
+<li>验收测试与回归</li>
+</ul>
+<h3 id="兼容性测试"><a href="#兼容性测试" class="headerlink" title="兼容性测试"></a>兼容性测试</h3><p>概念：不同平台、系统都能正常工作</p>
+<p>测试关注点（Web）：</p>
+<ul>
+<li>浏览器：IE、Chrome、FireFox</li>
+<li>操作系统：Windows、Linux、mac等</li>
+<li>网络</li>
+<li>分辨率</li>
+</ul>
+<h3 id="界面测试"><a href="#界面测试" class="headerlink" title="界面测试"></a>界面测试</h3><p>测试用户界面的功能模块的布局是否合理、整体风格是否一致、各个控件是否符合客户使用习惯</p>
+<ul>
+<li>布局</li>
+<li>风格</li>
+<li>按钮</li>
+<li>测试基本原则：参照UI设计图</li>
+<li>若无原型图：<ul>
+<li>导航测试</li>
+<li>图形测试</li>
+<li>内容测试（有无错别字）</li>
+<li>整体界面风格测试</li>
+</ul>
+</li>
+</ul>
+<h3 id="易用性"><a href="#易用性" class="headerlink" title="易用性"></a>易用性</h3><p>易懂、易学</p>
+<p>关注点：</p>
+<ul>
+<li>用户群体</li>
+<li>计算机水平</li>
+<li>项目复杂性</li>
+</ul>
+<h3 id="性能测试"><a href="#性能测试" class="headerlink" title="性能测试"></a>性能测试</h3><p>什么时候考虑：</p>
+<ul>
+<li>对性能有要求</li>
+<li>用户量大</li>
+</ul>
+<p>目的：</p>
+<p>验证稳定性、验证是否达到性能目标</p>
+<p>并发测试、压力测试、负载测试</p>
+<h3 id="安全性"><a href="#安全性" class="headerlink" title="安全性"></a>安全性</h3><p>关注点：</p>
+<p>输入数据：登录时密码是否进行加密以及密码是否容易破解，敏感信息遮挡处理，不能复制</p>
+<p>传输数据：加密要有复杂度</p>
+<p>输出数据：数据库中敏感信息要加密</p>
 
             </div>
             <hr>
@@ -675,7 +873,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://zzhanp.github.io/Zzhanp.github.io/2021/11/03/计算机网络体系结构/">https://zzhanp.github.io/Zzhanp.github.io/2021/11/03/计算机网络体系结构/</a>
+                    <a href="https://zzhanp.github.io/Zzhanp.github.io/2021/11/04/功能测试/">https://zzhanp.github.io/Zzhanp.github.io/2021/11/04/功能测试/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -713,8 +911,12 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/Zzhanp.github.io/tags/计算机网络/">
-                                    <span class="chip bg-color">计算机网络</span>
+                                <a href="/Zzhanp.github.io/tags/功能测试/">
+                                    <span class="chip bg-color">功能测试</span>
+                                </a>
+                            
+                                <a href="/Zzhanp.github.io/tags/测试理论/">
+                                    <span class="chip bg-color">测试理论</span>
                                 </a>
                             
                         </div>
@@ -884,7 +1086,8 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
                 <a href="/Zzhanp.github.io/2021/11/04/功能测试/">
                     <div class="card-image">
@@ -906,9 +1109,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-11-04
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-04
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -925,6 +1128,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -947,28 +1151,26 @@
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/Zzhanp.github.io/2021/03/25/sql注入/">
+                <a href="/Zzhanp.github.io/2021/11/03/计算机网络体系结构/">
                     <div class="card-image">
                         
                         
-                        <img src="/Zzhanp.github.io/medias/featureimages/3.jpg" class="responsive-img" alt="SQL注入">
+                        <img src="/Zzhanp.github.io/medias/featureimages/0.jpg" class="responsive-img" alt="计算机网络体系结构">
                         
-                        <span class="card-title">SQL注入</span>
+                        <span class="card-title">计算机网络体系结构</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            SQL注入学习接触安全这么久了，却连最基本的注入都还不会。。。令人汗颜。从这个笔记开始，好好学习注入，好好学习安全！本文借助sqli-labs来进行训练。
-联合查询注入过程1、判断注入点
-2、判断是整型还是字符型
-3、判断查询列数
-4、判断
+                            计算机网络体系结构因特网概述网络由若干结点和连接这些结点的链路组成。
+internet（互联网或互联网）：通用名词，泛指由多个计算机网络互连而成的网络。在这些网络之间的通信协议可以是任意的。
+Internet（专有名词）：指全球最大的、开放
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-25
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-03
                             </span>
                         <span class="publish-author">
                             
@@ -978,8 +1180,8 @@
                                     学习笔记
                                 </a>
                             
-                            <a href="/Zzhanp.github.io/categories/学习笔记/Web安全/" class="post-category">
-                                    Web安全
+                            <a href="/Zzhanp.github.io/categories/学习笔记/计算机网络/" class="post-category">
+                                    计算机网络
                                 </a>
                             
                             
@@ -989,16 +1191,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/Zzhanp.github.io/tags/Web安全/">
-                        <span class="chip bg-color">Web安全</span>
-                    </a>
-                    
-                    <a href="/Zzhanp.github.io/tags/SQL注入/">
-                        <span class="chip bg-color">SQL注入</span>
-                    </a>
-                    
-                    <a href="/Zzhanp.github.io/tags/SQL/">
-                        <span class="chip bg-color">SQL</span>
+                    <a href="/Zzhanp.github.io/tags/计算机网络/">
+                        <span class="chip bg-color">计算机网络</span>
                     </a>
                     
                 </div>

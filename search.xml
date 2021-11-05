@@ -101,9 +101,9 @@
             
             <tag> Web安全 </tag>
             
-            <tag> SQL </tag>
-            
             <tag> SQL注入 </tag>
+            
+            <tag> SQL </tag>
             
         </tags>
       
@@ -234,9 +234,9 @@
       
         <tags>
             
-            <tag> ctf </tag>
-            
             <tag> bugku </tag>
+            
+            <tag> ctf </tag>
             
             <tag> web </tag>
             
@@ -263,11 +263,11 @@
       
         <tags>
             
+            <tag> bugku </tag>
+            
             <tag> ctf </tag>
             
             <tag> misc </tag>
-            
-            <tag> bugku </tag>
             
         </tags>
       

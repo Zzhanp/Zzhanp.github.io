@@ -13,8 +13,6 @@
       
       <categories>
           
-          <category> 学习笔记 </category>
-          
           <category> 测试 </category>
           
       </categories>
@@ -41,8 +39,6 @@
       
       
       <categories>
-          
-          <category> 学习笔记 </category>
           
           <category> 测试 </category>
           
@@ -71,8 +67,6 @@
       
       <categories>
           
-          <category> 学习笔记 </category>
-          
           <category> 计算机网络 </category>
           
       </categories>
@@ -98,8 +92,6 @@
       
       <categories>
           
-          <category> 学习笔记 </category>
-          
           <category> Web安全 </category>
           
       </categories>
@@ -109,9 +101,9 @@
             
             <tag> Web安全 </tag>
             
-            <tag> SQL注入 </tag>
-            
             <tag> SQL </tag>
+            
+            <tag> SQL注入 </tag>
             
         </tags>
       
@@ -129,8 +121,6 @@
       
       <categories>
           
-          <category> 学习笔记 </category>
-          
           <category> 数据库 </category>
           
       </categories>
@@ -138,7 +128,7 @@
       
         <tags>
             
-            <tag> SQL学习 </tag>
+            <tag> SQL </tag>
             
             <tag> 数据库 </tag>
             
@@ -157,8 +147,6 @@
       
       
       <categories>
-          
-          <category> 学习笔记 </category>
           
           <category> Web安全 </category>
           
@@ -184,8 +172,6 @@
       
       
       <categories>
-          
-          <category> 学习笔记 </category>
           
           <category> PHP </category>
           
@@ -450,10 +436,6 @@
       
       
       <categories>
-          
-          <category> 学习笔记 </category>
-          
-          <category> 编程语言 </category>
           
           <category> C语言 </category>
           
